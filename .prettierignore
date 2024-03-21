@@ -1,3 +1,7 @@
-# Ignore artifacts:
-next
+node_modules
+.next
+yarn.lock
+public 
 coverage
+.gitkeep
+*.hbs
