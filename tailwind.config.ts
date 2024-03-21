@@ -1,4 +1,8 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+
+import { addVariablesForColors } from "@/utils/tailwind-plugins";
 
 const config: Config = {
   content: [
@@ -15,6 +19,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
+
 export default config;
