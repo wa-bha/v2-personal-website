@@ -10,4 +10,8 @@
   h1 {
     @apply text-slate-blue font-black font-nohemi;
   }
+
+  a {
+    @apply hover:text-slate-blue transition-colors duration-300;
+  }
 }
