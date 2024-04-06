@@ -1,18 +1,5 @@
 import type { Config } from "tailwindcss";
 const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
-const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
-
-function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
-
-  addBase({
-    ":root": newVars
-  });
-}
 
 const config: Config = {
   content: [
@@ -21,14 +8,25 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
+    colors: {
+      "floral-white": "#fffdf6",
+      black: "#353535",
+      "slate-blue": "#5856e4",
+      grey: "#b1aeae",
+      "green-yellow": "#dffd83",
+      tomato: "#fc6d42"
+    },
+
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
+      animation: {
+        "spin-slow": "spin 5s linear infinite"
+      },
+      fontFamily: {
+        satoshi: ["var(--font-satoshi)"],
+        nohemi: ["var(--font-nohemi)"]
       }
     }
-  },
-  plugins: [addVariablesForColors]
+  }
 };
 
 export default config;
