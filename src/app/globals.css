@@ -11,7 +11,7 @@
     @apply text-slate-blue font-black font-nohemi;
   }
 
-  a {
-    @apply hover:text-slate-blue transition-colors duration-300;
+  button {
+    @apply shadow-inner rounded-md hover:shadow-slate-blue hover:text-slate-blue transition-all duration-300;
   }
 }

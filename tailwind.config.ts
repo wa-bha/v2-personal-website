@@ -19,7 +19,7 @@ const config: Config = {
 
     extend: {
       animation: {
-        "spin-slow": "spin 5s linear infinite"
+        "spin-slow": "spin 6s linear infinite"
       },
       fontFamily: {
         satoshi: ["var(--font-satoshi)"],
