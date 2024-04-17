@@ -42,8 +42,8 @@ export default function Home() {
           <div className="px-10 md:pt-4 md:px-2 md:w-[48rem]">
             <p className="font-light text-center w-full text-[3.5vw] md:text-[2em] md:leading-tight">
               experienced software developer based in wellington
-              <FlagNZ className="pl-1.5 inline-flex h-[1em] align-text-bottom" /> skilled in
-              front-end frameworks
+              <FlagNZ className="pr-1 pl-0.5 md:pl-1.5 inline-flex h-[1em] align-text-bottom" />
+              skilled in front-end frameworks
             </p>
           </div>
         </div>
