@@ -1,6 +1,6 @@
 import React from "react";
 
-const MadeInWellingtonBadge = ({ className }: { className: string }) => {
+const MadeInWellingtonBadge = ({ className }: { className?: string }) => {
   return (
     <svg
       className={className}

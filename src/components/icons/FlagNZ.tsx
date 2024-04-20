@@ -1,6 +1,6 @@
 import React from "react";
 
-const FlagNZ = ({ className }: { className: string }) => {
+const FlagNZ = ({ className }: { className?: string }) => {
   return (
     <svg
       className={className}
