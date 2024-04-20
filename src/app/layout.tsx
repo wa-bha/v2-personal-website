@@ -12,7 +12,7 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Bhavit Wadhwa | software developer",
+  title: "Bhavit Wadhwa | software developer ☕",
   description: "Hello hello! this is my personal website."
 };
 

@@ -5,11 +5,16 @@ import bus from "./bus-placeholder.png";
 
 import { GitHub, Linkedin, ExternalLink } from "react-feather";
 import FlagNZ from "@/components/icons/FlagNZ";
+import BrowserWindow from "@/components/BrowserWindow";
+import ExperienceCard, { CompanyName } from "@/components/ExperienceCard";
 
 export default function Home() {
   return (
     <main>
-      <nav id="nav-bar" className="z-10 h-14 fixed top-0 bottom-auto left-0 right-0 shadow-md">
+      <nav
+        id="nav-bar"
+        className="z-10 bg-gradient-to-b from-floral-white h-14 fixed top-0 bottom-auto left-0 right-0 shadow-md"
+      >
         <div className="max-w-[90%] m-auto h-full px-5 flex justify-between items-center">
           <span>bhavit</span>
           <div className="flex gap-5">
@@ -50,7 +55,7 @@ export default function Home() {
           <div className="px-10 md:pt-4 md:px-2 md:w-[48rem]">
             <p className="align-baseline font-light text-center w-full text-[3.5vw] md:text-[2em] md:leading-tight">
               experienced software developer based in wellington
-              <FlagNZ className="mx-1 inline-flex h-[1em]" />
+              <FlagNZ className="mx-1 md:ml-2 inline-flex h-[1em]" />
               skilled in front-end frameworks
             </p>
           </div>
@@ -65,6 +70,39 @@ export default function Home() {
           <MadeInWellingtonBadge className="w-20 md:w-[8em]" />
         </div>
       </header>
+
+      {/* Experience -> Jarden { Direct, and then Hatchinvest } */}
+      <section id="experience" className="my-24 max-w-[90%] m-auto">
+        <h2 className="mb-12 text-slate-blue font-black font-nohemi text-3xl"># Experience</h2>
+
+        <BrowserWindow>
+          <div className="p-4">
+            <div className="flex flex-col gap-7">
+              <ExperienceCard
+                experience={{
+                  companyName: CompanyName.Hatch,
+                  position: "Software Engineer",
+                  startDate: "August 2023",
+                  endDate: undefined,
+                  location: "Wellington, NZ",
+                  employmentType: "Full-time"
+                }}
+              />
+
+              <ExperienceCard
+                experience={{
+                  companyName: CompanyName.Jarden,
+                  position: "Software Engineer",
+                  startDate: "November 2021",
+                  endDate: undefined,
+                  location: "Wellington, NZ",
+                  employmentType: "Full-time"
+                }}
+              />
+            </div>
+          </div>
+        </BrowserWindow>
+      </section>
 
       <footer className="shadow-inner">
         <div className="px-5 max-w-[90%] m-auto h-full flex flex-col justify-between gap-8">
