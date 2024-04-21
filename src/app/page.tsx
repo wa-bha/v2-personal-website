@@ -3,12 +3,13 @@ import MadeInWellingtonBadge from "@/components/icons/MadeInWellingtonBadge";
 import Image from "next/image";
 import bus from "./bus-placeholder.png";
 
-import { GitHub, Linkedin, ExternalLink } from "react-feather";
+import { GitHub, Linkedin, ExternalLink as ExternalLinkIcon } from "react-feather";
 import FlagNZ from "@/components/icons/FlagNZ";
 import BrowserWindow from "@/components/BrowserWindow";
 import JardenLogo from "@/components/icons/JardenLogo";
 import HatchLogo from "@/components/icons/HatchLogo";
 import HortPlusLogo from "@/components/icons/HortPlusLogo";
+import ExternalLink from "@/components/ExternalLink";
 
 export default function Home() {
   return (
@@ -21,19 +22,15 @@ export default function Home() {
           <span>bhavit</span>
           <div className="flex gap-5">
             <button className="p-2 pb-1.5">
-              <a
-                href="https://www.linkedin.com/in/bhavit-wadhwa/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/">
                 <Linkedin size={22} strokeWidth="1.5px" />
-              </a>
+              </ExternalLink>
             </button>
 
             <button className="p-2 pb-1.5">
-              <a href="https://github.com/wa-bha" target="_blank" rel="noopener noreferrer">
+              <ExternalLink href="https://github.com/wa-bha">
                 <GitHub size={24} strokeWidth="1.5px" />
-              </a>
+              </ExternalLink>
             </button>
           </div>
         </div>
@@ -45,13 +42,9 @@ export default function Home() {
       >
         <div className="pb-10 flex items-center justify-center flex-col">
           <h1 className="font-family text-[10vw] md:text-[5.4em]">
-            <a
-              href="https://en.wikipedia.org/wiki/Flat_white"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <ExternalLink href="https://en.wikipedia.org/wiki/Flat_white">
               Bhavit Wadhwa
-            </a>
+            </ExternalLink>
           </h1>
 
           <div className="px-10 md:pt-4 md:px-2 md:w-[48rem]">
@@ -63,13 +56,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-10 leading-tight text-sm md:text-base">
-          <p className="font-medium tracking-wide">coming soon...</p>
-          <p className="font-light text-grey tracking-wide">projects and experience section</p>
-        </div>
-
-        <div className="absolute bottom-[6rem] md:bottom-10 right-10 animate-spin-slow">
-          <MadeInWellingtonBadge className="w-20 md:w-[8em]" />
+        <div className="absolute bottom-10 right-10 animate-spin-slow">
+          <MadeInWellingtonBadge className="w-20 md:w-[9em]" />
         </div>
       </header>
 
@@ -78,46 +66,46 @@ export default function Home() {
         <div className="max-w-3xl mx-auto flex flex-col gap-10">
           <BrowserWindow sectionName="experience">
             <div className="flex flex-col gap-3">
-              <article className="p-2">
-                <div className="flex gap-2">
-                  <JardenLogo className="flex-none w-10 h-10" />
-                  <div className="flex flex-col gap-5">
-                    <header>
-                      <h5>
-                        <a href="https://www.linkedin.com/in/bhavit-wadhwa/#experience">Jarden</a>
-                      </h5>
+              <article className="p-2 flex gap-2">
+                <JardenLogo className="flex-none w-10 h-10" />
+                <div className="flex flex-col gap-5">
+                  <header>
+                    <h5>
+                      <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/#experience">
+                        Jarden
+                      </ExternalLink>
+                    </h5>
 
-                      <p className="text-gray-500 text-sm font-semibold tracking-tighter">
-                        <span>November 2021 → Present (2 years, 5 months)</span>
-                        <span className="font-semibold">{" • "}</span>
-                        <span className="font-light">Wellington, NZ</span>
-                        <span className="font-semibold">{" • "}</span>
-                        <span className="font-light">Full-time</span>
-                      </p>
-                    </header>
+                    <p className="text-gray-500 text-sm font-semibold tracking-tighter">
+                      <span>November 2021 → Present (2 years, 5 months)</span>
+                      <span className="font-semibold">{" • "}</span>
+                      <span className="font-light">Wellington, NZ</span>
+                      <span className="font-semibold">{" • "}</span>
+                      <span className="font-light">Full-time</span>
+                    </p>
+                  </header>
 
-                    <section className="flex gap-2">
-                      <HatchLogo className="flex-none w-6 h-6" />
+                  <section className="flex gap-2">
+                    <HatchLogo className="flex-none w-6 h-6" />
 
-                      <div>
-                        <h6 className="font-medium">Hatch Invest team</h6>
-                        <p className="text-xs">Software Engineer</p>
-                      </div>
-                    </section>
+                    <div>
+                      <h6 className="font-medium">Hatch Invest team</h6>
+                      <p className="text-xs">Software Engineer</p>
+                    </div>
+                  </section>
 
-                    <section className="flex gap-2">
-                      <JardenLogo
-                        className="flex-none w-6 h-6"
-                        fillColor="#FFFFFF"
-                        backgroundColor="#28A47D"
-                      />
+                  <section className="flex gap-2">
+                    <JardenLogo
+                      className="flex-none w-6 h-6"
+                      fillColor="#FFFFFF"
+                      backgroundColor="#28A47D"
+                    />
 
-                      <div>
-                        <h6 className="font-medium">Direct Wealth team</h6>
-                        <p className="text-xs">Software Engineer</p>
-                      </div>
-                    </section>
-                  </div>
+                    <div>
+                      <h6 className="font-medium">Direct Wealth team</h6>
+                      <p className="text-xs">Software Engineer</p>
+                    </div>
+                  </section>
                 </div>
               </article>
             </div>
@@ -125,39 +113,37 @@ export default function Home() {
 
           <BrowserWindow sectionName="projects">
             <div className="flex flex-col gap-3">
-              <article className="p-2">
-                <div className="flex gap-2">
-                  <HortPlusLogo className="flex-none w-10 h-10" />
-                  <div className="flex flex-col gap-5">
-                    <header>
-                      <h5>
-                        <a href="https://www.linkedin.com/in/bhavit-wadhwa/#projects">HortPlus</a>
-                      </h5>
+              <article className="m-2 flex gap-2">
+                <HortPlusLogo className="flex-none w-10 h-10" />
+                <div className="flex flex-col gap-5">
+                  <header>
+                    <h5>
+                      <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/#projects">
+                        HortPlus
+                      </ExternalLink>
+                    </h5>
 
-                      <p className="text-gray-500 text-sm font-semibold tracking-tighter">
-                        <span>August 2021 → November 2021 (3 months)</span>
-                        <span className="font-semibold">{" • "}</span>
-                        <span className="font-light">Hawkes Bay, NZ</span>
-                        <span className="font-semibold">{" • "}</span>
-                        <span className="font-light">Remote</span>
-                      </p>
-                    </header>
-                  </div>
+                    <p className="text-gray-500 text-sm font-semibold tracking-tighter">
+                      <span>August 2021 → November 2021 (3 months)</span>
+                      <span className="font-semibold">{" • "}</span>
+                      <span className="font-light">Hawkes Bay, NZ</span>
+                      <span className="font-semibold">{" • "}</span>
+                      <span className="font-light">Remote</span>
+                    </p>
+                  </header>
                 </div>
               </article>
 
-              <article className="p-2">
-                <div className="flex gap-2">
-                  <div className="bg-green-yellow rounded-full w-10 h-10" />
-                  <div className="flex flex-col gap-5">
-                    <header>
-                      <h5>Coming soon...</h5>
+              <article className="p-2 flex gap-2">
+                <div className="bg-green-yellow rounded-full w-10 h-10" />
+                <div className="flex flex-col gap-5">
+                  <header>
+                    <h5>More projects...</h5>
 
-                      <p className="text-gray-500 text-sm font-semibold tracking-tighter">
-                        <span>...new projects!</span>
-                      </p>
-                    </header>
-                  </div>
+                    <p className="text-gray-500 text-sm font-semibold tracking-tighter">
+                      <span>...coming soon!</span>
+                    </p>
+                  </header>
                 </div>
               </article>
             </div>
@@ -169,10 +155,10 @@ export default function Home() {
         <div className="px-5 max-w-[90%] m-auto h-full flex flex-col justify-between gap-8">
           <div className="pt-4 flex justify-between items-center">
             <button className="px-1.5 py-0.5">
-              <a href="https://v1.bhavit.dev" target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="pr-1 pb-1 inline-flex" size={20} strokeWidth="1.5px" />
+              <ExternalLink href="https://v1.bhavit.dev">
+                <ExternalLinkIcon className="pr-1 pb-1 inline-flex" size={20} strokeWidth="1.5px" />
                 <span className="font-medium">v1</span>
-              </a>
+              </ExternalLink>
             </button>
 
             <p className="font-medium">{new Date().getFullYear()}</p>
