@@ -6,7 +6,9 @@ import bus from "./bus-placeholder.png";
 import { GitHub, Linkedin, ExternalLink } from "react-feather";
 import FlagNZ from "@/components/icons/FlagNZ";
 import BrowserWindow from "@/components/BrowserWindow";
-import ExperienceCard, { CompanyName } from "@/components/ExperienceCard";
+import JardenLogo from "@/components/icons/JardenLogo";
+import HatchLogo from "@/components/icons/HatchLogo";
+import HortPlusLogo from "@/components/icons/HortPlusLogo";
 
 export default function Home() {
   return (
@@ -39,7 +41,7 @@ export default function Home() {
 
       <header
         id="hero-section"
-        className="relative py-8 h-svh w-full flex justify-center items-center overflow-hidden"
+        className="relative mb-10 md:mb-20 h-svh w-full flex justify-center items-center overflow-hidden"
       >
         <div className="pb-10 flex items-center justify-center flex-col">
           <h1 className="font-family text-[10vw] md:text-[5.4em]">
@@ -72,36 +74,95 @@ export default function Home() {
       </header>
 
       {/* Experience -> Jarden { Direct, and then Hatchinvest } */}
-      <section id="experience" className="my-24 max-w-[90%] m-auto">
-        <h2 className="mb-12 text-slate-blue font-black font-nohemi text-3xl"># Experience</h2>
+      <section id="experience" className="my-10 md:my-20 max-w-[90%] m-auto">
+        <div className="max-w-3xl mx-auto flex flex-col gap-10">
+          <BrowserWindow sectionName="experience">
+            <div className="flex flex-col gap-3">
+              <article className="p-2">
+                <div className="flex gap-2">
+                  <JardenLogo className="flex-none w-10 h-10" />
+                  <div className="flex flex-col gap-5">
+                    <header>
+                      <h5>
+                        <a href="https://www.linkedin.com/in/bhavit-wadhwa/#experience">Jarden</a>
+                      </h5>
 
-        <BrowserWindow>
-          <div className="p-4">
-            <div className="flex flex-col gap-7">
-              <ExperienceCard
-                experience={{
-                  companyName: CompanyName.Hatch,
-                  position: "Software Engineer",
-                  startDate: "August 2023",
-                  endDate: undefined,
-                  location: "Wellington, NZ",
-                  employmentType: "Full-time"
-                }}
-              />
+                      <p className="text-gray-500 text-sm font-semibold tracking-tighter">
+                        <span>November 2021 → Present (2 years, 5 months)</span>
+                        <span className="font-semibold">{" • "}</span>
+                        <span className="font-light">Wellington, NZ</span>
+                        <span className="font-semibold">{" • "}</span>
+                        <span className="font-light">Full-time</span>
+                      </p>
+                    </header>
 
-              <ExperienceCard
-                experience={{
-                  companyName: CompanyName.Jarden,
-                  position: "Software Engineer",
-                  startDate: "November 2021",
-                  endDate: undefined,
-                  location: "Wellington, NZ",
-                  employmentType: "Full-time"
-                }}
-              />
+                    <section className="flex gap-2">
+                      <HatchLogo className="flex-none w-6 h-6" />
+
+                      <div>
+                        <h6 className="font-medium">Hatch Invest team</h6>
+                        <p className="text-xs">Software Engineer</p>
+                      </div>
+                    </section>
+
+                    <section className="flex gap-2">
+                      <JardenLogo
+                        className="flex-none w-6 h-6"
+                        fillColor="#FFFFFF"
+                        backgroundColor="#28A47D"
+                      />
+
+                      <div>
+                        <h6 className="font-medium">Direct Wealth team</h6>
+                        <p className="text-xs">Software Engineer</p>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </article>
             </div>
-          </div>
-        </BrowserWindow>
+          </BrowserWindow>
+
+          <BrowserWindow sectionName="projects">
+            <div className="flex flex-col gap-3">
+              <article className="p-2">
+                <div className="flex gap-2">
+                  <HortPlusLogo className="flex-none w-10 h-10" />
+                  <div className="flex flex-col gap-5">
+                    <header>
+                      <h5>
+                        <a href="https://www.linkedin.com/in/bhavit-wadhwa/#projects">HortPlus</a>
+                      </h5>
+
+                      <p className="text-gray-500 text-sm font-semibold tracking-tighter">
+                        <span>August 2021 → November 2021 (3 months)</span>
+                        <span className="font-semibold">{" • "}</span>
+                        <span className="font-light">Hawkes Bay, NZ</span>
+                        <span className="font-semibold">{" • "}</span>
+                        <span className="font-light">Remote</span>
+                      </p>
+                    </header>
+                  </div>
+                </div>
+              </article>
+
+              <article className="p-2">
+                <div className="flex gap-2">
+                  <div className="bg-green-yellow rounded-full w-10 h-10" />
+                  <div className="flex flex-col gap-5">
+                    <header>
+                      <h5>Coming soon...</h5>
+
+                      <p className="text-gray-500 text-sm font-semibold tracking-tighter">
+                        <span>...new projects!</span>
+                      </p>
+                    </header>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </BrowserWindow>
+        </div>
       </section>
 
       <footer className="shadow-inner">

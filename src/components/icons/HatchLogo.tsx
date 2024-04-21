@@ -11,7 +11,7 @@ const HatchLogo = ({ className }: { className?: string }) => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect width="32" height="32" rx="16" fill="#231F20" />
-      <g clip-path="url(#clip0_1408_119)">
+      <g clipPath="url(#clip0_1408_119)">
         <mask
           id="mask0_1408_119"
           style={{ maskType: "luminance" }}
