@@ -57,94 +57,86 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-10 right-10 animate-spin-slow">
-          <MadeInWellingtonBadge className="w-20 md:w-[9em]" />
+          <MadeInWellingtonBadge className="w-28 md:w-32 lg:w-36" />
         </div>
       </header>
 
-      {/* Experience -> Jarden { Direct, and then Hatchinvest } */}
       <section id="experience" className="my-10 md:my-20 max-w-[90%] m-auto">
         <div className="max-w-3xl mx-auto flex flex-col gap-10">
           <BrowserWindow sectionName="experience">
-            <div className="flex flex-col gap-3">
-              <article className="p-2 flex gap-2">
-                <JardenLogo className="flex-none w-10 h-10" />
-                <div className="flex flex-col gap-5">
-                  <header>
-                    <h5>
-                      <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/#experience">
-                        Jarden
-                      </ExternalLink>
-                    </h5>
+            <article className="p-2 flex gap-2">
+              <JardenLogo className="flex-none w-10 h-10" />
 
-                    <p className="text-gray-500 text-sm font-semibold tracking-tighter">
-                      <span>November 2021 → Present (2 years, 5 months)</span>
-                      <span className="font-semibold">{" • "}</span>
-                      <span className="font-light">Wellington, NZ</span>
-                      <span className="font-semibold">{" • "}</span>
-                      <span className="font-light">Full-time</span>
-                    </p>
-                  </header>
+              <div className="flex flex-col">
+                <header>
+                  <h5 className="text-lg font-semibold leading-tight">
+                    <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/#experience">
+                      Jarden
+                    </ExternalLink>
+                  </h5>
 
-                  <section className="flex gap-2">
-                    <HatchLogo className="flex-none w-6 h-6" />
+                  <div className="text-gray-500 text-sm tracking-tighter">
+                    <p className="font-light">Wellington, NZ • Full-time</p>
+                    <p className="font-medium">November 2021 → Present (2 years, 5 months)</p>
+                  </div>
+                </header>
+
+                <div className="pt-4 flex flex-col gap-y-3">
+                  <section className="flex gap-x-2">
+                    <HatchLogo className="flex-none w-6 h-6 pt-0.5" />
 
                     <div>
-                      <h6 className="font-medium">Hatch Invest team</h6>
+                      <h6 className="font-medium leading-tight">Hatch Invest team</h6>
                       <p className="text-xs">Software Engineer</p>
                     </div>
                   </section>
 
-                  <section className="flex gap-2">
+                  <section className="flex gap-x-2">
                     <JardenLogo
-                      className="flex-none w-6 h-6"
+                      className="flex-none w-6 h-6 pt-0.5"
                       fillColor="#FFFFFF"
                       backgroundColor="#28A47D"
                     />
 
                     <div>
-                      <h6 className="font-medium">Direct Wealth team</h6>
+                      <h6 className="font-medium leading-tight">Direct Wealth team</h6>
                       <p className="text-xs">Software Engineer</p>
                     </div>
                   </section>
                 </div>
-              </article>
-            </div>
+              </div>
+            </article>
           </BrowserWindow>
 
           <BrowserWindow sectionName="projects">
             <div className="flex flex-col gap-3">
               <article className="m-2 flex gap-2">
                 <HortPlusLogo className="flex-none w-10 h-10" />
-                <div className="flex flex-col gap-5">
-                  <header>
-                    <h5>
-                      <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/#projects">
-                        HortPlus
-                      </ExternalLink>
-                    </h5>
 
-                    <p className="text-gray-500 text-sm font-semibold tracking-tighter">
-                      <span>August 2021 → November 2021 (3 months)</span>
-                      <span className="font-semibold">{" • "}</span>
-                      <span className="font-light">Hawkes Bay, NZ</span>
-                      <span className="font-semibold">{" • "}</span>
-                      <span className="font-light">Remote</span>
-                    </p>
-                  </header>
-                </div>
+                <header>
+                  <h5 className="text-lg font-semibold leading-tight">
+                    <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/#projects">
+                      HortPlus
+                    </ExternalLink>
+                  </h5>
+
+                  <div className="text-gray-500 text-sm tracking-tighter">
+                    <p className="font-light">Hawkes Bay, NZ • Remote</p>
+                    <p className="font-semibold">August 2021 → November 2021 (3 months)</p>
+                  </div>
+                </header>
               </article>
 
               <article className="p-2 flex gap-2">
                 <div className="bg-green-yellow rounded-full w-10 h-10" />
-                <div className="flex flex-col gap-5">
-                  <header>
-                    <h5>More projects...</h5>
 
-                    <p className="text-gray-500 text-sm font-semibold tracking-tighter">
-                      <span>...coming soon!</span>
-                    </p>
-                  </header>
-                </div>
+                <header>
+                  <h5>More projects...</h5>
+
+                  <p className="text-gray-500 text-sm font-semibold tracking-tighter">
+                    <span>...coming soon!</span>
+                  </p>
+                </header>
               </article>
             </div>
           </BrowserWindow>
