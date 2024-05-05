@@ -10,6 +10,7 @@ import JardenLogo from "@/components/icons/JardenLogo";
 import HatchLogo from "@/components/icons/HatchLogo";
 import HortPlusLogo from "@/components/icons/HortPlusLogo";
 import ExternalLink from "@/components/ExternalLink";
+import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
   return (
@@ -76,8 +77,9 @@ export default function Home() {
                   </h5>
 
                   <div className="text-gray-500 text-sm tracking-tighter">
-                    <p className="font-light">Wellington, NZ • Full-time</p>
-                    <p className="font-medium">November 2021 → Present (2 years, 5 months)</p>
+                    <p className="font-light">
+                      Wellington, NZ • Full-time • November 2021 → Present (2 years, 5 months)
+                    </p>
                   </div>
                 </header>
 
@@ -87,7 +89,16 @@ export default function Home() {
 
                     <div>
                       <h6 className="font-medium leading-tight">Hatch Invest team</h6>
-                      <p className="text-xs">Software Engineer</p>
+                      <p className="text-sm">Software Engineer</p>
+
+                      <div className="pt-1.5 flex flex-wrap gap-x-1 gap-y-1">
+                        <Badge variant="hatch">React</Badge>
+                        <Badge variant="hatch">Ruby on Rails</Badge>
+                        <Badge variant="hatch">Javascript</Badge>
+                        <Badge variant="hatch">Scss CSS</Badge>
+                        <Badge variant="hatch">Vitest</Badge>
+                        <Badge variant="hatch">Recharts</Badge>
+                      </div>
                     </div>
                   </section>
 
@@ -100,7 +111,16 @@ export default function Home() {
 
                     <div>
                       <h6 className="font-medium leading-tight">Direct Wealth team</h6>
-                      <p className="text-xs">Software Engineer</p>
+                      <p className="text-sm">Software Engineer</p>
+
+                      <div className="pt-1.5 flex flex-wrap gap-x-1 gap-y-1">
+                        <Badge variant="jarden">React</Badge>
+                        <Badge variant="jarden">Typescript</Badge>
+                        <Badge variant="jarden">Tailwind</Badge>
+                        <Badge variant="jarden">Apollo GraphQL</Badge>
+                        <Badge variant="jarden">Jest</Badge>
+                        <Badge variant="jarden">React-financial-charts</Badge>
+                      </div>
                     </div>
                   </section>
                 </div>
@@ -121,23 +141,39 @@ export default function Home() {
                   </h5>
 
                   <div className="text-gray-500 text-sm tracking-tighter">
-                    <p className="font-light">Hawkes Bay, NZ • Remote</p>
-                    <p className="font-semibold">August 2021 → November 2021 (3 months)</p>
+                    <p className="font-light">
+                      Hawkes Bay, NZ • Remote • August 2021 → November 2021 (3 months)
+                    </p>
+                  </div>
+
+                  <div className="pt-1.5 flex flex-wrap gap-x-1 gap-y-1">
+                    <Badge variant="hortplus">React</Badge>
+                    <Badge variant="hortplus">Typescript</Badge>
+                    <Badge variant="hortplus">CSS</Badge>
+                    <Badge variant="hortplus">Bootstrap</Badge>
+                    <Badge variant="hortplus">MapboxGL JS</Badge>
                   </div>
                 </header>
               </article>
 
-              <article className="p-2 flex gap-2">
-                <div className="bg-green-yellow rounded-full w-10 h-10" />
+              {/* Personal website */}
+              {/* <article className="m-2 flex gap-2">
+                <HortPlusLogo className="flex-none w-10 h-10" />
 
                 <header>
-                  <h5>More projects...</h5>
+                  <h5 className="text-lg font-semibold leading-tight">
+                    <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/#projects">
+                      Personal Website
+                    </ExternalLink>
+                  </h5>
 
-                  <p className="text-gray-500 text-sm font-semibold tracking-tighter">
-                    <span>...coming soon!</span>
-                  </p>
+                  <div className="pt-1.5 flex flex-wrap gap-x-1 gap-y-1 *:bg-green-yellow *:text-black">
+                    <Badge>React</Badge>
+                    <Badge>NextJS</Badge>
+                    <Badge>shadcn/ui</Badge>
+                  </div>
                 </header>
-              </article>
+              </article> */}
             </div>
           </BrowserWindow>
         </div>
