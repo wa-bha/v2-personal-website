@@ -10,7 +10,7 @@ import JardenLogo from "@/components/icons/JardenLogo";
 import HatchLogo from "@/components/icons/HatchLogo";
 import HortPlusLogo from "@/components/icons/HortPlusLogo";
 import ExternalLink from "@/components/ExternalLink";
-import { Badge } from "@/components/ui/badge";
+import BadgeList from "@/components/BadgeList";
 
 export default function Home() {
   return (
@@ -78,49 +78,74 @@ export default function Home() {
 
                   <div className="text-gray-500 text-sm tracking-tighter">
                     <p className="font-light">
-                      Wellington, NZ • Full-time • November 2021 → Present (2 years, 5 months)
+                      Wellington, NZ • Full-time • November 2021 → Present (2 years, 7 months)
                     </p>
                   </div>
                 </header>
 
-                <div className="pt-4 flex flex-col gap-y-3">
+                <div className="pt-4 flex flex-col gap-y-5">
                   <section className="flex gap-x-2">
-                    <HatchLogo className="flex-none w-6 h-6 pt-0.5" />
+                    <HatchLogo className="flex-none w-6 h-6" />
 
-                    <div>
-                      <h6 className="font-medium leading-tight">Hatch Invest team</h6>
+                    <div className="mt-[-0.25rem]">
+                      <div className="flex flex-wrap items-center gap-x-1.5">
+                        <h6 className="font-medium leading-tight">Hatch Invest team</h6>
+
+                        <ExternalLink className="text-slate-50" href="https://www.hatchinvest.nz/">
+                          <span className="rounded-sm px-1 py-0.5 bg-hatch-purple/70 text-xs font-medium">
+                            hatchinvest.nz ↗
+                          </span>
+                        </ExternalLink>
+                      </div>
                       <p className="text-sm">Software Engineer</p>
 
-                      <div className="pt-1.5 flex flex-wrap gap-x-1 gap-y-1">
-                        <Badge variant="hatch">React</Badge>
-                        <Badge variant="hatch">Ruby on Rails</Badge>
-                        <Badge variant="hatch">Javascript</Badge>
-                        <Badge variant="hatch">Scss CSS</Badge>
-                        <Badge variant="hatch">Vitest</Badge>
-                        <Badge variant="hatch">Recharts</Badge>
-                      </div>
+                      <BadgeList
+                        badges={[
+                          "React",
+                          "Ruby on Rails",
+                          "Javascript",
+                          "Scss CSS",
+                          "Vitest",
+                          "Recharts"
+                        ]}
+                        variant="hatch"
+                      />
                     </div>
                   </section>
 
                   <section className="flex gap-x-2">
                     <JardenLogo
-                      className="flex-none w-6 h-6 pt-0.5"
+                      className="flex-none w-6 h-6"
                       fillColor="#FFFFFF"
                       backgroundColor="#28A47D"
                     />
 
-                    <div>
-                      <h6 className="font-medium leading-tight">Direct Wealth team</h6>
+                    <div className="mt-[-0.25rem]">
+                      <div className="flex flex-wrap items-center gap-x-1.5">
+                        <h6 className="font-medium leading-tight">Direct Wealth team</h6>
+
+                        <ExternalLink
+                          className="text-slate-50"
+                          href="https://www.jardendirect.co.nz/"
+                        >
+                          <span className="rounded-sm px-1 py-0.5 bg-direct-green/70 text-xs font-medium">
+                            jardendirect.co.nz ↗
+                          </span>
+                        </ExternalLink>
+                      </div>
                       <p className="text-sm">Software Engineer</p>
 
-                      <div className="pt-1.5 flex flex-wrap gap-x-1 gap-y-1">
-                        <Badge variant="jarden">React</Badge>
-                        <Badge variant="jarden">Typescript</Badge>
-                        <Badge variant="jarden">Tailwind</Badge>
-                        <Badge variant="jarden">Apollo GraphQL</Badge>
-                        <Badge variant="jarden">Jest</Badge>
-                        <Badge variant="jarden">React-financial-charts</Badge>
-                      </div>
+                      <BadgeList
+                        badges={[
+                          "React",
+                          "Typescript",
+                          "Tailwind",
+                          "Apollo GraphQL",
+                          "Jest",
+                          "React-financial-charts"
+                        ]}
+                        variant="jarden"
+                      />
                     </div>
                   </section>
                 </div>
@@ -134,11 +159,20 @@ export default function Home() {
                 <HortPlusLogo className="flex-none w-10 h-10" />
 
                 <header>
-                  <h5 className="text-lg font-semibold leading-tight">
-                    <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/#projects">
-                      HortPlus
+                  <div className="mt-[-0.25rem] flex flex-wrap items-start gap-x-1.5">
+                    <h5 className="pt-0.5 text-lg font-semibold leading-tight">HortPlus</h5>
+
+                    <ExternalLink className="text-slate-50" href="https://www.hortplus.com/">
+                      <span className="rounded-sm px-1 py-0.5 bg-hortplus-blue/70 text-xs font-medium">
+                        hortplus.com ↗
+                      </span>
                     </ExternalLink>
-                  </h5>
+                    <ExternalLink className="text-slate-50" href="https://sprayplan.nz/">
+                      <span className="rounded-sm px-1 py-0.5 bg-hortplus-blue/70 text-xs font-medium">
+                        sprayplan.nz ↗
+                      </span>
+                    </ExternalLink>
+                  </div>
 
                   <div className="text-gray-500 text-sm tracking-tighter">
                     <p className="font-light">
@@ -146,13 +180,10 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <div className="pt-1.5 flex flex-wrap gap-x-1 gap-y-1">
-                    <Badge variant="hortplus">React</Badge>
-                    <Badge variant="hortplus">Typescript</Badge>
-                    <Badge variant="hortplus">CSS</Badge>
-                    <Badge variant="hortplus">Bootstrap</Badge>
-                    <Badge variant="hortplus">MapboxGL JS</Badge>
-                  </div>
+                  <BadgeList
+                    badges={["React", "Typescript", "CSS", "Bootstrap", "MapboxGL JS"]}
+                    variant="hortplus"
+                  />
                 </header>
               </article>
 
@@ -168,8 +199,8 @@ export default function Home() {
                   </h5>
 
                   <div className="pt-1.5 flex flex-wrap gap-x-1 gap-y-1 *:bg-green-yellow *:text-black">
-                    <Badge>React</Badge>
                     <Badge>NextJS</Badge>
+                    <Badge>React</Badge>
                     <Badge>shadcn/ui</Badge>
                   </div>
                 </header>
