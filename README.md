@@ -15,7 +15,7 @@ Here's my second go at a personal website. Ideally, this will be much easier to 
 **the stack: 🛠️**
 
 > - React with typescript
-> - Tailwind css
+> - Tailwind css (with a sprinkle of shadcn/ui and AceternityUI reusable components)
 > - Next-js
 > - Vercel hosting
 

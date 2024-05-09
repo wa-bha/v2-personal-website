@@ -14,4 +14,19 @@
   button {
     @apply shadow-inner rounded-md hover:shadow-slate-blue hover:text-slate-blue transition-all duration-300;
   }
+
+  .slide-in-underline {
+    @apply block relative overflow-hidden;
+  }
+
+  .slide-in-underline::after {
+    @apply content-[''] absolute bottom-0 left-0 w-full h-2.5 opacity-0 transition-all duration-300;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .slide-in-underline:hover::after,
+  .slide-in-underline:focus::after {
+    opacity: 0.2;
+    transform: translate3d(0, 0, 0);
+  }
 }

@@ -1,16 +1,9 @@
-import MadeInWellingtonBadge from "@/components/icons/MadeInWellingtonBadge";
-
-import Image from "next/image";
-import bus from "./bus-placeholder.png";
-
 import { GitHub, Linkedin, ExternalLink as ExternalLinkIcon } from "react-feather";
+
+import MadeInWellingtonBadge from "@/components/icons/MadeInWellingtonBadge";
 import FlagNZ from "@/components/icons/FlagNZ";
-import BrowserWindow from "@/components/BrowserWindow";
-import JardenLogo from "@/components/icons/JardenLogo";
-import HatchLogo from "@/components/icons/HatchLogo";
-import HortPlusLogo from "@/components/icons/HortPlusLogo";
 import ExternalLink from "@/components/ExternalLink";
-import BadgeList from "@/components/BadgeList";
+import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
 
 export default function Home() {
   return (
@@ -39,7 +32,7 @@ export default function Home() {
 
       <header
         id="hero-section"
-        className="relative mb-10 md:mb-20 h-svh w-full flex justify-center items-center overflow-hidden"
+        className="relative mb-10 md:mb-20 h-svh md:h-[85svh] w-full flex justify-center items-center overflow-hidden"
       >
         <div className="pb-10 flex items-center justify-center flex-col">
           <h1 className="font-family text-[10vw] md:text-[5.4em]">
@@ -62,170 +55,61 @@ export default function Home() {
         </div>
       </header>
 
-      <section id="experience" className="my-10 md:my-20 max-w-[90%] m-auto">
-        <div className="max-w-3xl mx-auto flex flex-col gap-10">
-          <BrowserWindow sectionName="experience">
-            <article className="p-2 flex gap-2">
-              <JardenLogo className="flex-none w-10 h-10" />
+      <section
+        id="experience"
+        className="px-1 sm:px-5 my-10 md:my-20 max-w-[90%] m-auto 2xl:flex 2xl:justify-center"
+      >
+        <div className="max-w-2xl">
+          <h2 className="font-satoshi text-2xl font-semibold">Experience</h2>
 
-              <div className="flex flex-col">
-                <header>
-                  <h5 className="text-lg font-semibold leading-tight">
-                    <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/#experience">
-                      Jarden
-                    </ExternalLink>
-                  </h5>
+          <div className="pt-8 flex flex-wrap lg:flex-nowrap 2xl:flex-wrap gap-4">
+            <ExperienceCard companyName="hatch" />
+            <ExperienceCard companyName="jarden" />
+            <ExperienceCard companyName="hortplus" />
+          </div>
+        </div>
+      </section>
 
-                  <div className="text-gray-500 text-sm tracking-tighter">
-                    <p className="font-light">
-                      Wellington, NZ • Full-time • November 2021 → Present (2 years, 7 months)
-                    </p>
-                  </div>
-                </header>
+      <section
+        id="bio"
+        className="px-1 sm:px-5 my-10 md:my-20 max-w-[90%] m-auto 2xl:flex 2xl:justify-center"
+      >
+        <div className="max-w-2xl">
+          <h2 className="font-satoshi text-2xl font-semibold">Bio</h2>
 
-                <div className="pt-4 flex flex-col gap-y-5">
-                  <section className="flex gap-x-2">
-                    <HatchLogo className="flex-none w-6 h-6" />
+          <div className="pt-8 font-satoshi md:text-lg">
+            <p className="font-semibold">
+              I'm passionate about turning design ideas into exceptional user experiences.
+              Collaborating with talented teams to bring these concepts to life is something I find
+              incredibly rewarding.
+            </p>
 
-                    <div className="mt-[-0.25rem]">
-                      <div className="flex flex-wrap items-center gap-x-1.5">
-                        <h6 className="font-medium leading-tight">Hatch Invest team</h6>
+            <p className="pt-4">
+              At Hatch, I'm helping build a new investing platform that expands access into new
+              markets. Their mission deeply resonates with me: to make wealth generation more
+              accessible for Kiwi investors.
+            </p>
 
-                        <ExternalLink className="text-slate-50" href="https://www.hatchinvest.nz/">
-                          <span className="rounded-sm px-1 py-0.5 bg-hatch-purple/70 text-xs font-medium">
-                            hatchinvest.nz ↗
-                          </span>
-                        </ExternalLink>
-                      </div>
-                      <p className="text-sm">Software Engineer</p>
-
-                      <BadgeList
-                        badges={[
-                          "React",
-                          "Ruby on Rails",
-                          "Javascript",
-                          "Scss CSS",
-                          "Vitest",
-                          "Recharts"
-                        ]}
-                        variant="hatch"
-                      />
-                    </div>
-                  </section>
-
-                  <section className="flex gap-x-2">
-                    <JardenLogo
-                      className="flex-none w-6 h-6"
-                      fillColor="#FFFFFF"
-                      backgroundColor="#28A47D"
-                    />
-
-                    <div className="mt-[-0.25rem]">
-                      <div className="flex flex-wrap items-center gap-x-1.5">
-                        <h6 className="font-medium leading-tight">Direct Wealth team</h6>
-
-                        <ExternalLink
-                          className="text-slate-50"
-                          href="https://www.jardendirect.co.nz/"
-                        >
-                          <span className="rounded-sm px-1 py-0.5 bg-direct-green/70 text-xs font-medium">
-                            jardendirect.co.nz ↗
-                          </span>
-                        </ExternalLink>
-                      </div>
-                      <p className="text-sm">Software Engineer</p>
-
-                      <BadgeList
-                        badges={[
-                          "React",
-                          "Typescript",
-                          "Tailwind",
-                          "Apollo GraphQL",
-                          "Jest",
-                          "React-financial-charts"
-                        ]}
-                        variant="jarden"
-                      />
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </article>
-          </BrowserWindow>
-
-          <BrowserWindow sectionName="projects">
-            <div className="flex flex-col gap-3">
-              <article className="m-2 flex gap-2">
-                <HortPlusLogo className="flex-none w-10 h-10" />
-
-                <header>
-                  <div className="mt-[-0.25rem] flex flex-wrap items-start gap-x-1.5">
-                    <h5 className="pt-0.5 text-lg font-semibold leading-tight">HortPlus</h5>
-
-                    <ExternalLink className="text-slate-50" href="https://www.hortplus.com/">
-                      <span className="rounded-sm px-1 py-0.5 bg-hortplus-blue/70 text-xs font-medium">
-                        hortplus.com ↗
-                      </span>
-                    </ExternalLink>
-                    <ExternalLink className="text-slate-50" href="https://sprayplan.nz/">
-                      <span className="rounded-sm px-1 py-0.5 bg-hortplus-blue/70 text-xs font-medium">
-                        sprayplan.nz ↗
-                      </span>
-                    </ExternalLink>
-                  </div>
-
-                  <div className="text-gray-500 text-sm tracking-tighter">
-                    <p className="font-light">
-                      Hawkes Bay, NZ • Remote • August 2021 → November 2021 (3 months)
-                    </p>
-                  </div>
-
-                  <BadgeList
-                    badges={["React", "Typescript", "CSS", "Bootstrap", "MapboxGL JS"]}
-                    variant="hortplus"
-                  />
-                </header>
-              </article>
-
-              {/* Personal website */}
-              {/* <article className="m-2 flex gap-2">
-                <HortPlusLogo className="flex-none w-10 h-10" />
-
-                <header>
-                  <h5 className="text-lg font-semibold leading-tight">
-                    <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/#projects">
-                      Personal Website
-                    </ExternalLink>
-                  </h5>
-
-                  <div className="pt-1.5 flex flex-wrap gap-x-1 gap-y-1 *:bg-green-yellow *:text-black">
-                    <Badge>NextJS</Badge>
-                    <Badge>React</Badge>
-                    <Badge>shadcn/ui</Badge>
-                  </div>
-                </header>
-              </article> */}
-            </div>
-          </BrowserWindow>
+            <p className="pt-4">
+              Outside of work, you'll likely find me exploring the beautiful landscapes of NZ.
+              Whether it's carving through snow on a snowboard 🏂, hiking new trails or enjoying a
+              game of field hockey, I love spending time outdoors.
+            </p>
+          </div>
         </div>
       </section>
 
       <footer className="shadow-inner">
         <div className="px-5 max-w-[90%] m-auto h-full flex flex-col justify-between gap-8">
-          <div className="pt-4 flex justify-between items-center">
+          <div className="py-5 flex justify-between items-center">
             <button className="px-1.5 py-0.5">
               <ExternalLink href="https://v1.bhavit.dev">
                 <ExternalLinkIcon className="pr-1 pb-1 inline-flex" size={20} strokeWidth="1.5px" />
-                <span className="font-medium">v1</span>
+                <span className="text-lg font-semibold">v1</span>
               </ExternalLink>
             </button>
 
-            <p className="font-medium">{new Date().getFullYear()}</p>
-          </div>
-
-          {/* Wellington bus */}
-          <div className="pl-2.5 flex justify-center">
-            <Image src={bus} width={450} height={500} alt="bus" />
+            <p className="text-lg font-semibold">© {new Date().getFullYear()}</p>
           </div>
         </div>
       </footer>
