@@ -8,7 +8,7 @@ Here's my second go at a personal website. Ideally, this will be much easier to 
 - [x] deploy to vercel
 - [x] move the domains around
 - [x] add experience section
-- [ ] github workflows -> build and lint check
+- [x] github workflows -> build and lint check
 
 _and now the trivial and random stuff..._
 

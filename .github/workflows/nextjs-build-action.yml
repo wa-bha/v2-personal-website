@@ -1,0 +1,81 @@
+name: Check NextJS Lint and Build
+
+# Run on
+on:
+  # Run on push events to any branch
+  push:
+    branches:
+      - "*"
+
+  # Pull request to main
+  pull_request:
+    branches:
+      - main
+
+  # Manual trigger
+  workflow_dispatch:
+
+# Jobs to perform
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Lint with ESLint
+      - name: Lint with ESLint
+        run: npm run lint
+
+  prettier-format:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Format code
+      - name: Format code
+        run: npm run format
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Build with Next.js
+      - name: Build with Next.js
+        run: npm run build
