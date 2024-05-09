@@ -16,7 +16,7 @@
   }
 
   .slide-in-underline {
-    @apply block relative overflow-hidden;
+    @apply px-1 block relative overflow-hidden;
   }
 
   .slide-in-underline::after {

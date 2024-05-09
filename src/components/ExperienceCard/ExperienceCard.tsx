@@ -49,16 +49,19 @@ const companies: Record<CompanyNames, CompanyInfo> = {
   }
 };
 
-const underlineVariants = cva("slide-in-underline text-lg font-medium leading-tight", {
-  variants: {
-    variant: {
-      default: "after:bg-slate-50",
-      hatch: "after:bg-hatch-purple",
-      jarden: "after:bg-direct-green",
-      hortplus: "after:bg-hortplus-blue"
+const underlineVariants = cva(
+  "slide-in-underline text-lg font-medium leading-tight ml-[-0.25rem]",
+  {
+    variants: {
+      variant: {
+        default: "after:bg-slate-50",
+        hatch: "after:bg-hatch-purple",
+        jarden: "after:bg-direct-green",
+        hortplus: "after:bg-hortplus-blue"
+      }
     }
   }
-});
+);
 
 const backgroundVariants = cva("w-full sm:w-64 lg:w-80 h-60 bg-gray-300", {
   variants: {
