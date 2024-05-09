@@ -3,7 +3,7 @@ import { GitHub, Linkedin, ExternalLink as ExternalLinkIcon } from "react-feathe
 import MadeInWellingtonBadge from "@/components/icons/MadeInWellingtonBadge";
 import FlagNZ from "@/components/icons/FlagNZ";
 import ExternalLink from "@/components/ExternalLink";
-import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
+import ExperienceCard from "@/components/ExperienceCard";
 
 export default function Home() {
   return (
@@ -19,9 +19,9 @@ export default function Home() {
 
       <header
         id="hero-section"
-        className="relative mb-10 md:mb-20 h-svh md:h-[80svh] w-full flex justify-center items-center overflow-hidden"
+        className="relative mb-10 h-svh md:h-[85svh] w-full flex justify-center items-center overflow-hidden"
       >
-        <div className="pb-10 sm:pb-0 pt-12 flex items-center justify-center flex-col">
+        <div className="pb-10 md:pb-0 pt-12 flex items-center justify-center flex-col">
           <ExternalLink href="https://en.wikipedia.org/wiki/Flat_white">
             <h1 className="slide-in-underline after:bg-slate-blue after:bottom-[0.3em] after:h-[0.3em] font-family text-[10vw] md:text-[5.4em]">
               Bhavit Wadhwa
@@ -38,15 +38,15 @@ export default function Home() {
 
           <div className="pt-6 flex gap-5">
             <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/">
-              <div className="slide-in-underline after:bg-slate-blue flex flex-nowrap items-center gap-2">
-                <Linkedin className="mb-0.5" size={18} strokeWidth="2px" />
+              <div className="slide-in-underline after:bg-slate-blue flex flex-nowrap items-center gap-1.5">
+                <Linkedin className="mb-0.5" size={20} strokeWidth="2px" />
                 <span className="font-medium">linkedin ↗</span>
               </div>
             </ExternalLink>
 
             <ExternalLink href="https://github.com/wa-bha">
-              <div className="slide-in-underline after:bg-slate-blue flex flex-nowrap items-center gap-2">
-                <GitHub size={20} strokeWidth="2px" />
+              <div className="slide-in-underline after:bg-slate-blue flex flex-nowrap items-center gap-1.5">
+                <GitHub className="mb-0.5" size={20} strokeWidth="2px" />
                 <span className="font-medium">github ↗</span>
               </div>
             </ExternalLink>
@@ -60,10 +60,10 @@ export default function Home() {
 
       <section
         id="experience"
-        className="px-1 sm:px-5 my-10 md:my-20 max-w-[90%] m-auto 2xl:flex 2xl:justify-center"
+        className="px-1 sm:px-5 my-10 md:mb-20 max-w-[90%] m-auto 2xl:flex 2xl:justify-center"
       >
         <div className="max-w-2xl">
-          <h2 className="font-satoshi text-2xl font-semibold">Experience</h2>
+          <h2>Experience</h2>
 
           <div className="pt-8 flex flex-wrap lg:flex-nowrap 2xl:flex-wrap gap-x-4 gap-y-6">
             <ExperienceCard companyName="hatch" />
@@ -78,22 +78,22 @@ export default function Home() {
         className="px-1 sm:px-5 my-10 md:my-20 max-w-[90%] m-auto 2xl:flex 2xl:justify-center"
       >
         <div className="max-w-2xl">
-          <h2 className="font-satoshi text-2xl font-semibold">Bio</h2>
+          <h2>Bio</h2>
 
-          <div className="pt-8 font-satoshi md:text-lg">
+          <div className="pt-8 font-satoshi md:text-lg flex flex-col gap-4">
             <p className="font-semibold">
               I'm passionate about turning design ideas into exceptional user experiences.
               Collaborating with talented teams to bring these concepts to life is something I find
               incredibly rewarding.
             </p>
 
-            <p className="pt-4">
+            <p>
               At Hatch, I'm helping build a new investing platform that expands access into new
-              markets. Their mission deeply resonates with me: to make wealth generation more
-              accessible for Kiwi investors.
+              markets. Their mission resonates with me: to make wealth generation more accessible
+              for Kiwi investors.
             </p>
 
-            <p className="pt-4">
+            <p>
               Outside of work, you'll likely find me exploring the beautiful landscapes of NZ.
               Whether it's carving through snow on a snowboard 🏂, hiking new trails or enjoying a
               game of field hockey, I love spending time outdoors.
@@ -106,8 +106,8 @@ export default function Home() {
         <div className="px-5 max-w-[90%] m-auto h-full flex flex-col justify-between gap-8">
           <div className="py-5 flex justify-between items-center">
             <ExternalLink href="https://v1.bhavit.dev">
-              <button className="px-1.5 py-0.5">
-                <ExternalLinkIcon className="pr-1 pb-1 inline-flex" size={20} strokeWidth="2px" />
+              <button className="px-2 py-0.5">
+                <ExternalLinkIcon className="pr-1 pb-1 inline-flex" size={22} strokeWidth="2.5px" />
                 <span className="text-lg font-semibold">v1.0</span>
               </button>
             </ExternalLink>

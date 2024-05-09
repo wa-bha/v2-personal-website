@@ -11,10 +11,15 @@
     @apply text-slate-blue font-black font-nohemi;
   }
 
+  h2 {
+    @apply font-satoshi text-2xl font-semibold;
+  }
+
   button {
     @apply shadow-inner rounded-md hover:shadow-slate-blue hover:text-slate-blue transition-all duration-300;
   }
 
+  /* Fancy slide in animation (left to right) for links  */
   .slide-in-underline {
     @apply px-1 block relative overflow-hidden;
   }
