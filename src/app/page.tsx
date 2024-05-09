@@ -35,11 +35,11 @@ export default function Home() {
         className="relative mb-10 md:mb-20 h-svh md:h-[85svh] w-full flex justify-center items-center overflow-hidden"
       >
         <div className="pb-10 flex items-center justify-center flex-col">
-          <h1 className="font-family text-[10vw] md:text-[5.4em]">
-            <ExternalLink href="https://en.wikipedia.org/wiki/Flat_white">
+          <ExternalLink href="https://en.wikipedia.org/wiki/Flat_white">
+            <h1 className="slide-in-underline after:bg-slate-blue after:bottom-[0.3em] after:h-[0.3em] font-family text-[10vw] md:text-[5.4em]">
               Bhavit Wadhwa
-            </ExternalLink>
-          </h1>
+            </h1>
+          </ExternalLink>
 
           <div className="px-10 md:pt-4 md:px-2 md:w-[48rem]">
             <p className="align-baseline font-light text-center w-full text-[3.5vw] md:text-[2em] md:leading-tight">
@@ -105,7 +105,7 @@ export default function Home() {
             <button className="px-1.5 py-0.5">
               <ExternalLink href="https://v1.bhavit.dev">
                 <ExternalLinkIcon className="pr-1 pb-1 inline-flex" size={20} strokeWidth="1.5px" />
-                <span className="text-lg font-semibold">v1</span>
+                <span className="text-lg font-semibold">v1.0</span>
               </ExternalLink>
             </button>
 
