@@ -82,21 +82,21 @@ export default function Home() {
 
           <div className="pt-8 font-satoshi md:text-lg flex flex-col gap-4">
             <p className="font-semibold">
-              I'm passionate about turning design ideas into exceptional user experiences.
+              I&apos;m passionate about turning design ideas into exceptional user experiences.
               Collaborating with talented teams to bring these concepts to life is something I find
               incredibly rewarding.
             </p>
 
             <p>
-              At Hatch, I'm helping build a new investing platform that expands access into new
+              At Hatch, I&apos;m helping build a new investing platform that expands access into new
               markets. Their mission resonates with me: to make wealth generation more accessible
               for Kiwi investors.
             </p>
 
             <p>
-              Outside of work, you'll likely find me exploring the beautiful landscapes of NZ.
-              Whether it's carving through snow on a snowboard 🏂, hiking new trails or enjoying a
-              game of field hockey, I love spending time outdoors.
+              Outside of work, you&apos;ll likely find me exploring the beautiful landscapes of NZ.
+              Whether it&apos;s carving through snow on a snowboard 🏂, hiking new trails or
+              enjoying a game of field hockey, I love spending time outdoors.
             </p>
           </div>
         </div>

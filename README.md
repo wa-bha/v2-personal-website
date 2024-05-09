@@ -8,8 +8,10 @@ Here's my second go at a personal website. Ideally, this will be much easier to 
 - [x] deploy to vercel
 - [x] move the domains around
 - [x] add experience section
+- [ ] github workflows -> build and lint check
 
-*and now the trivial and random stuff...*
+_and now the trivial and random stuff..._
+
 - [ ] add the big floating snowboard 🏂
 - [ ] mouse trail with flat white's ☕ [@see "Mouse Image Trail"](www.hover.dev/components/other#mouse-image-trail)
 - [ ] implement blog framework for nextJS, write ✍️ my first article? [@see prismic](https://prismic.io/blog/nextjs-blog-tutorial)

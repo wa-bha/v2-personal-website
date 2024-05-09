@@ -10,7 +10,6 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      ...colors,
       "floral-white": "#fffdf6",
       black: "#353535",
       "slate-blue": "#5856e4",
@@ -21,7 +20,9 @@ const config: Config = {
       // Company colours
       "hatch-purple": "#7e54e3",
       "direct-green": "#28a47d",
-      "hortplus-blue": "#00AEEF"
+      "hortplus-blue": "#00AEEF",
+
+      ...colors
     },
 
     container: {
