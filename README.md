@@ -9,6 +9,7 @@ Here's my second go at a personal website. Ideally, this will be much easier to 
 - [x] move the domains around
 - [x] add experience section
 - [x] github workflows -> build and lint check
+- [ ] ^ follow-on, deploy to vercel after workflow passes [@see vercel docs](https://vercel.com/guides/how-can-i-use-github-actions-with-vercel)
 
 _and now the trivial and random stuff..._
 
