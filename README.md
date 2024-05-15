@@ -3,6 +3,7 @@
 Here's my second go at a personal website. Ideally, this will be much easier to expand on than v1.
 
 <img width="400" alt="image" src="https://github.com/wa-bha/v2-personal-website/assets/55519189/08b2b71a-ce86-4c02-9061-5f098c4f0be5">
+
 _^ last updated on 20th april_
 
 ## TODO: ✅
