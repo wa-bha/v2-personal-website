@@ -63,7 +63,7 @@ const underlineVariants = cva(
   }
 );
 
-const backgroundVariants = cva("w-full sm:w-64 lg:w-80 h-60 bg-gray-300", {
+const backgroundVariants = cva("w-full sm:h-60 bg-gray-300", {
   variants: {
     variant: {
       default: "bg-slate-50",
@@ -78,7 +78,7 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyNames }) => {
   const { applicationName, description, href, logo: Logo, image } = companies[companyName];
 
   return (
-    <section className="w-full sm:w-fit">
+    <section>
       {/* Image */}
       <WobbleCard containerClassName={backgroundVariants({ variant: companyName })}>
         <Image

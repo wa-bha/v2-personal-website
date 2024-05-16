@@ -53,7 +53,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-10 right-10 md:bottom-0 animate-spin-slow">
+        <div className="absolute bottom-8 right-8 md:bottom-0 animate-spin-slow">
           <MadeInWellingtonBadge className="w-28 md:w-32 lg:w-36" />
         </div>
       </header>
@@ -62,10 +62,10 @@ export default function Home() {
         id="experience"
         className="px-1 sm:px-5 my-10 md:mb-20 max-w-[90%] m-auto 2xl:flex 2xl:justify-center"
       >
-        <div className="max-w-2xl">
+        <div className="w-full max-w-6xl 2xl:max-w-2xl">
           <h2>Experience</h2>
 
-          <div className="pt-8 flex flex-wrap lg:flex-nowrap 2xl:flex-wrap gap-x-4 gap-y-6">
+          <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-x-4 gap-y-6">
             <ExperienceCard companyName="hatch" />
             <ExperienceCard companyName="jarden" />
             <ExperienceCard companyName="hortplus" />
