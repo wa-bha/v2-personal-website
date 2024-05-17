@@ -19,6 +19,7 @@ type CompanyNames = "hatch" | "jarden" | "hortplus";
 interface CompanyInfo {
   applicationName: string;
   description: string;
+  location: string;
   href: string;
   logo: React.JSX.Element;
   image: StaticImageData;
@@ -29,20 +30,23 @@ const companies: Record<CompanyNames, CompanyInfo> = {
   hatch: {
     applicationName: "Hatch Invest",
     description: "Jarden & FNZ Joint Venture",
+    location: "Wellington, NZ",
     href: "https://www.hatchinvest.nz/",
     logo: <HatchLogo className="w-7 h-7" />,
     image: hatch
   },
   jarden: {
     applicationName: "Jarden Direct",
-    description: "Jarden, Wellington",
+    description: "Jarden",
+    location: "Wellington, NZ",
     href: "https://www.jardendirect.co.nz/",
     logo: <JardenLogo className="w-7 h-7" fillColor="#FFFFFF" backgroundColor="#28A47D" />,
     image: jarden
   },
   hortplus: {
     applicationName: "SprayPlan Manager",
-    description: "HortPlus, Hawkes Bay (Remote)",
+    description: "HortPlus",
+    location: "Hawkes Bay, NZ (Remote)",
     href: "https://www.hortplus.com/spray-plan-manager/",
     logo: <HortplusLogo className="w-7 h-7" />,
     image: hortplus
@@ -63,7 +67,7 @@ const underlineVariants = cva(
   }
 );
 
-const backgroundVariants = cva("w-full sm:h-60 bg-gray-300", {
+const backgroundVariants = cva("w-full sm:h-60 bg-gray-300 drop-shadow-md", {
   variants: {
     variant: {
       default: "bg-slate-50",
@@ -75,7 +79,7 @@ const backgroundVariants = cva("w-full sm:h-60 bg-gray-300", {
 });
 
 const ExperienceCard = ({ companyName }: { companyName: CompanyNames }) => {
-  const { applicationName, description, href, logo: Logo, image } = companies[companyName];
+  const { applicationName, description, location, href, logo, image } = companies[companyName];
 
   return (
     <section>
@@ -90,17 +94,18 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyNames }) => {
         />
       </WobbleCard>
 
-      {/* Text under */}
-      <div className="mx-2 mt-2">
+      {/* Text underneath */}
+      <div className="mx-2 mt-2 flex flex-col">
         <div className="flex items-center justify-between">
           {/* Header */}
           <ExternalLink href={href}>
             <h6 className={underlineVariants({ variant: companyName })}>{applicationName} ↗</h6>
           </ExternalLink>
 
-          {Logo}
+          {logo}
         </div>
-        <span className="text-sm font-light text-slate-500">{description}</span>
+        <span className="text-sm text-gray-800 leading-tight">{description}</span>
+        <span className="text-xs font-light text-slate-500 tracking-tight">{location}</span>
       </div>
     </section>
   );

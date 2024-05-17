@@ -53,7 +53,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 right-8 md:bottom-0 animate-spin-slow">
+        <div className="m-2 absolute bottom-6 right-6 md:bottom-0 animate-spin-slow drop-shadow-md">
           <MadeInWellingtonBadge className="w-28 md:w-32 lg:w-36" />
         </div>
       </header>
