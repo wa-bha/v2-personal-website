@@ -10,6 +10,7 @@ const FlagNZ = ({ className }: { className?: string }) => {
       role="img"
       preserveAspectRatio="xMidYMid meet"
     >
+      <title id="flagTitle">NZ</title>
       <path
         fill="#00247D"
         d="M32 5H4c-.205 0-.407.015-.604.045l-.004 1.754l-2.73-.004A3.984 3.984 0 0 0 0 9v18a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4z"
