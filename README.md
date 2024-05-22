@@ -18,7 +18,7 @@ _^ screenshot last updated on 20th april_
 **_and now for my more trivial ideas..._** ⬜
 
 - ⬜ add the big floating snowboard 🏂
-- ⬜ mouse trail with flat white's ☕ [@see "Mouse Image Trail"](www.hover.dev/components/other#mouse-image-trail)
+- ⬜ mouse trail with flat white's ☕ [@see "Mouse Image Trail"](https://www.hover.dev/components/other#mouse-image-trail)
 - ⬜ implement blog framework for nextJS, write ✍️ my first article? [@see prismic](https://prismic.io/blog/nextjs-blog-tutorial)
 - ⬜ hover effect over experience cards [@see "Following Pointer"](https://ui.aceternity.com/components/following-pointer)
 
