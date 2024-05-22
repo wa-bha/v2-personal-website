@@ -30,7 +30,9 @@ export default function Home() {
 
           <div className="px-10 md:pt-4 md:px-2 md:w-[48rem]">
             <p className="font-light text-center text-[5vw] md:text-[2em] md:leading-tight">
-              experienced full-stack 👨🏽‍💻 software engineer, skilled in front-end frameworks
+              experienced software engineer based in wellington{" "}
+              <FlagNZ className="mx-0.5 mb-1 inline-flex h-[1em]" />, skilled in front-end
+              frameworks
             </p>
           </div>
 
@@ -79,23 +81,22 @@ export default function Home() {
           <h2>Bio</h2>
 
           <div className="pt-8 font-satoshi md:text-lg flex flex-col gap-4">
-            <p className="font-semibold align-baseline">
-              I&apos;m a highly-motivated and driven software engineer, based in Wellington,
-              <FlagNZ className="ml-1 mb-1 inline-flex h-[1.25em]" />. Collaborating with talented
-              teams to turn design ideas into exceptional user experiences is something I find
-              incredibly rewarding.
+            <p className="font-semibold">
+              I am a highly-motivated and driven full-stack software engineer 👨🏽‍💻, working in the
+              fin-tech space. Collaborating with talented teams to transform design ideas into
+              exceptional user experiences is something I find incredibly rewarding.
             </p>
 
-            <p>
+            <p className="align-baseline">
               At Hatch, I&apos;m helping build a new investing platform that expands access into new
               markets. Their mission resonates deeply with me: to make wealth generation more
               accessible for Kiwi investors.
             </p>
 
             <p>
-              Outside of work, you&apos;ll likely find me exploring the beautiful landscapes of NZ.
-              Whether it&apos;s carving through snow on a snowboard 🏂, hiking new trails or
-              enjoying a game of field hockey, I love spending time outdoors.
+              Outside of work, you&apos;ll often find me exploring the beautiful landscapes of NZ.
+              Whether it&apos;s carving through snow on a snowboard 🏂, hiking new trails or playing
+              a game of field hockey, I love spending time outdoors.
             </p>
           </div>
         </div>
