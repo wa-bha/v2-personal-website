@@ -21,14 +21,14 @@ export default function Home() {
         id="hero-section"
         className="relative mb-10 h-svh md:h-[85svh] w-full flex justify-center items-center overflow-hidden"
       >
-        <div className="pb-10 md:pb-0 pt-12 flex items-center justify-center flex-col">
+        <div className="pt-12 flex items-center justify-center flex-col">
           <ExternalLink href="https://en.wikipedia.org/wiki/Flat_white">
-            <h1 className="slide-in-underline after:bg-slate-blue after:bottom-[0.3em] after:h-[0.3em] font-family text-[10vw] md:text-[5.4em]">
+            <h1 className="slide-in-underline after:bg-slate-blue after:bottom-[0.3em] after:h-[0.3em] text-[10vw] md:text-[5.4em]">
               Bhavit Wadhwa
             </h1>
           </ExternalLink>
 
-          <div className="px-10 md:pt-4 md:px-2 md:w-[48rem]">
+          <div className="px-10 md:px-2 md:w-[48rem]">
             <p className="font-light text-center text-[5vw] md:text-[2em] md:leading-tight">
               experienced software engineer based in wellington{" "}
               <FlagNZ className="mx-0.5 mb-1 inline-flex h-[1em]" />, skilled in front-end
@@ -53,8 +53,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="m-2 absolute bottom-6 right-6 md:bottom-0 animate-spin-slow drop-shadow-md">
-          <MadeInWellingtonBadge className="w-28 md:w-32 lg:w-36" />
+        <div className="m-2 absolute bottom-6 right-6 md:bottom-0">
+          <MadeInWellingtonBadge className="w-28 md:w-32 lg:w-36 drop-shadow-md" />
         </div>
       </header>
 
@@ -87,10 +87,14 @@ export default function Home() {
               exceptional user experiences is something I find incredibly rewarding.
             </p>
 
-            <p className="align-baseline">
-              At Hatch, I&apos;m helping build a new investing platform that expands access into new
+            <p>
+              At{" "}
+              <ExternalLink href="https://www.hatchinvest.nz/" className="w-fit inline-flex">
+                <span className="heavy-underline after:bg-slate-blue">Hatch</span>
+              </ExternalLink>
+              , I&apos;m helping build a new investing platform that expands access into new
               markets. Their mission resonates deeply with me: to make wealth generation more
-              accessible for Kiwi investors.
+              accessible for all Kiwi investors.
             </p>
 
             <p>
