@@ -10,9 +10,9 @@ import JardenLogo from "../icons/JardenLogo";
 import HortplusLogo from "../icons/HortPlusLogo";
 import { WobbleCard } from "../ui/wobble-card";
 
-import jarden from "/public/jarden.jpg";
-import hatch from "/public/hatch.jpg";
-import hortplus from "/public/hortplus.jpg";
+import jarden from "/public/images/jarden.jpg";
+import hatch from "/public/images/hatch.jpg";
+import hortplus from "/public/images/hortplus.jpg";
 
 type CompanyNames = "hatch" | "jarden" | "hortplus";
 

@@ -1,13 +1,13 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
-import "./globals.css";
-
-const nohemi = localFont({ src: "../../public/Nohemi-VF.ttf", variable: "--font-nohemi" });
+const nohemi = localFont({ src: "../../public/fonts/Nohemi-VF.ttf", variable: "--font-nohemi" });
 const satoshi = localFont({
-  src: "../../public/Satoshi-Variable.ttf",
+  src: "../../public/fonts/Satoshi-Variable.ttf",
   variable: "--font-satoshi"
 });
 
@@ -16,13 +16,15 @@ export const metadata: Metadata = {
   description: "Hello hello! this is my personal website."
 };
 
+const cx = (...classes: string[]) => classes.filter(Boolean).join(" ");
+
 export default function RootLayout({
   children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${nohemi.variable} ${satoshi.variable}`}>
+    <html lang="en" className={cx(nohemi.variable, satoshi.variable)}>
       <body>
         {children}
         <Analytics />
