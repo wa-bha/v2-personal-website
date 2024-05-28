@@ -12,7 +12,7 @@
   }
 
   h2 {
-    @apply font-satoshi text-2xl font-semibold;
+    @apply font-satoshi text-2xl font-bold;
   }
 
   button {

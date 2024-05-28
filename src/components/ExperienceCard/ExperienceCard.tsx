@@ -86,7 +86,7 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyNames }) => {
       {/* Image */}
       <WobbleCard containerClassName={backgroundVariants({ variant: companyName })}>
         <Image
-          className="absolute rounded-lg object-contain"
+          className="top-10 md:top-24 right-[-2rem] absolute rounded-lg object-contain"
           src={image}
           width={500}
           height={500}

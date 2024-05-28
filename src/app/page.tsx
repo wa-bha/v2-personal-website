@@ -14,12 +14,10 @@ export default function Home() {
       >
         <div className="flex items-center justify-center flex-col">
           <ExternalLink href="https://en.wikipedia.org/wiki/Flat_white">
-            <h1 className="slide-in-underline after:bg-slate-blue after:bottom-[0.3em] after:h-[0.3em] text-[10vw] md:text-[5.4em]">
-              Bhavit Wadhwa
-            </h1>
+            <h1 className="text-[10vw] md:text-[5.4em]">Bhavit Wadhwa</h1>
           </ExternalLink>
 
-          <div className="px-10 md:px-2 md:w-[48rem]">
+          <div className="mt-[-0.5em] px-10 md:px-2 md:w-[48rem]">
             <p className="font-light text-center text-[5vw] md:text-[2em] md:leading-tight">
               experienced software engineer based in wellington{" "}
               <FlagNZ className="mx-0.5 mb-1 inline-flex h-[1em]" />, skilled in front-end
