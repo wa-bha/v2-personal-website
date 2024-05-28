@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+import Navbar from "@/components/Navbar";
 
 const nohemi = localFont({ src: "../../public/fonts/Nohemi-VF.ttf", variable: "--font-nohemi" });
 const satoshi = localFont({
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cx(nohemi.variable, satoshi.variable)}>
       <body>
+        <Navbar />
         {children}
         <Analytics />
         <SpeedInsights />

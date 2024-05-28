@@ -8,20 +8,11 @@ import ExperienceCard from "@/components/ExperienceCard";
 export default function Home() {
   return (
     <main>
-      <nav
-        id="nav-bar"
-        className="z-10 bg-gradient-to-b from-floral-white h-14 fixed top-0 bottom-auto left-0 right-0 shadow-md"
-      >
-        <div className="max-w-[90%] m-auto h-full px-5 flex items-center">
-          <span>bhavit</span>
-        </div>
-      </nav>
-
       <header
         id="hero-section"
-        className="relative mb-10 h-svh md:h-[85svh] w-full flex justify-center items-center overflow-hidden"
+        className="relative mb-10 h-svh md:h-[90svh] w-full flex justify-center items-center overflow-hidden"
       >
-        <div className="pt-12 flex items-center justify-center flex-col">
+        <div className="flex items-center justify-center flex-col">
           <ExternalLink href="https://en.wikipedia.org/wiki/Flat_white">
             <h1 className="slide-in-underline after:bg-slate-blue after:bottom-[0.3em] after:h-[0.3em] text-[10vw] md:text-[5.4em]">
               Bhavit Wadhwa
@@ -81,7 +72,7 @@ export default function Home() {
           <h2>Bio</h2>
 
           <div className="pt-8 font-satoshi md:text-lg flex flex-col gap-4">
-            <p className="font-semibold">
+            <p className="font-semibold tracking-[-0.015em]">
               I am a highly-motivated and driven full-stack software engineer 👨🏽‍💻, working in the
               fin-tech space. Collaborating with talented teams to transform design ideas into
               exceptional user experiences is something I find incredibly rewarding.
