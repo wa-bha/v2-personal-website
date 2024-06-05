@@ -6,7 +6,7 @@ interface Props {
   backgroundColor?: string;
 }
 
-const JardenLogo = ({ className, fillColor = "#CDB072", backgroundColor = "#29323E" }: Props) => {
+const JardenLogo = ({ className, fillColor = "#FFFFFF", backgroundColor = "#28A47D" }: Props) => {
   return (
     <svg
       className={className}

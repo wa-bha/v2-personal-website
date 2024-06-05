@@ -3,16 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-floral-white text-black;
-  }
-
   h1 {
     @apply text-slate-blue font-black font-nohemi;
   }
 
   h2 {
-    @apply font-satoshi text-2xl font-bold;
+    @apply font-satoshi text-3xl font-extrabold tracking-tighter;
   }
 
   button {

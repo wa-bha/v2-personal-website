@@ -3,6 +3,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { cva } from "class-variance-authority";
+import { CircleArrowRight } from "lucide-react";
 
 import ExternalLink from "../ExternalLink";
 import HatchLogo from "../icons/HatchLogo";
@@ -32,7 +33,7 @@ const companies: Record<CompanyNames, CompanyInfo> = {
     description: "Jarden & FNZ Joint Venture",
     location: "Wellington, NZ",
     href: "https://www.hatchinvest.nz/",
-    logo: <HatchLogo className="w-7 h-7" />,
+    logo: <HatchLogo className="w-5 h-5" />,
     image: hatch
   },
   jarden: {
@@ -40,7 +41,7 @@ const companies: Record<CompanyNames, CompanyInfo> = {
     description: "Jarden",
     location: "Wellington, NZ",
     href: "https://www.jardendirect.co.nz/",
-    logo: <JardenLogo className="w-7 h-7" fillColor="#FFFFFF" backgroundColor="#28A47D" />,
+    logo: <JardenLogo className="w-5 h-5" />,
     image: jarden
   },
   hortplus: {
@@ -48,13 +49,13 @@ const companies: Record<CompanyNames, CompanyInfo> = {
     description: "HortPlus",
     location: "Hawkes Bay, NZ (Remote)",
     href: "https://www.hortplus.com/spray-plan-manager/",
-    logo: <HortplusLogo className="w-7 h-7" />,
+    logo: <HortplusLogo className="w-5 h-5" />,
     image: hortplus
   }
 };
 
 const underlineVariants = cva(
-  "slide-in-underline text-lg font-medium leading-tight ml-[-0.25rem]",
+  "ml-[-0.25rem] w-fit slide-in-underline flex items-center space-x-1.5",
   {
     variants: {
       variant: {
@@ -94,18 +95,26 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyNames }) => {
         />
       </WobbleCard>
 
-      {/* Text underneath */}
-      <div className="mx-2 mt-2 flex flex-col">
-        <div className="flex items-center justify-between">
-          {/* Header */}
-          <ExternalLink href={href}>
-            <h6 className={underlineVariants({ variant: companyName })}>{applicationName} ↗</h6>
-          </ExternalLink>
-
-          {logo}
+      <div className="mx-2 mt-2 flex flex-col space-y-1.5">
+        {/* Company and location */}
+        <div className="flex flex-col">
+          <span className="text-sm font-medium text-gray-800 tracking-tight leading-tight">
+            {description}
+          </span>
+          <span className="text-xs text-slate-500 tracking-tight">{location}</span>
         </div>
-        <span className="text-sm text-gray-800 leading-tight">{description}</span>
-        <span className="text-xs font-light text-slate-500 tracking-tight">{location}</span>
+
+        {/* Product header with logo */}
+        <div className={underlineVariants({ variant: companyName })}>
+          {logo}
+
+          <ExternalLink href={href}>
+            <h6 className="text-lg font-semibold tracking-tighter">
+              <span>{applicationName}</span>
+              <CircleArrowRight className="pl-1 mb-0.5 inline-flex h-[1em]" strokeWidth="2.5px" />
+            </h6>
+          </ExternalLink>
+        </div>
       </div>
     </section>
   );
