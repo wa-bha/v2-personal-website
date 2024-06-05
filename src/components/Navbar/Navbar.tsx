@@ -18,12 +18,10 @@ const Navbar = () => {
         <div className="flex flex-row space-x-4 pr-10">
           {Object.entries(navItems).map(([path, { name }]) => {
             return (
-              <Link
-                key={path}
-                href={path}
-                className="font-medium slide-in-underline after:bg-tomato flex align-middle"
-              >
-                {name}
+              <Link key={path} href={path}>
+                <span className="font-medium slide-in-underline after:bg-tomato flex align-middle">
+                  {name}
+                </span>
               </Link>
             );
           })}
