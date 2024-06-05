@@ -85,7 +85,7 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyNames }) => {
   return (
     <section>
       {/* Image */}
-      <WobbleCard containerClassName={backgroundVariants({ variant: companyName })}>
+      <WobbleCard href={href} containerClassName={backgroundVariants({ variant: companyName })}>
         <Image
           className="top-10 md:top-24 right-[-2rem] absolute rounded-lg object-contain"
           src={image}

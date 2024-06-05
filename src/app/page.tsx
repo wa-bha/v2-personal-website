@@ -17,26 +17,26 @@ export default function Home() {
             <h1 className="text-[10vw] md:text-[6em]">Bhavit Wadhwa</h1>
           </ExternalLink>
 
-          <div className="mt-0 sm:mt-[-1.25em] px-10 md:px-2 md:w-[48rem]">
-            <p className="font-medium text-center text-[5vw] tracking-tight md:text-[1.9em] md:leading-tight">
+          <div className="mt-[-0.5rem] sm:mt-[-1.25em] px-10 md:px-2 md:w-[48rem]">
+            <p className="font-medium text-center text-[5vw] tracking-tight md:text-[1.85em] md:leading-tight">
               experienced software engineer based in wellington{" "}
-              <FlagNZ className="mb-1 inline-flex h-[1em]" />, skilled in front-end frameworks
+              <FlagNZ className="mb-1 inline-flex h-[1em]" />, skilled in front-end development
             </p>
           </div>
 
-          <div className="pt-[1em] flex flex-wrap justify-center gap-y-2 md:gap-x-5">
+          <div className="pt-[1em] flex flex-wrap justify-center gap-y-2 md:gap-x-5 font-bold md:text-lg tracking-tight">
             <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/">
-              <div className="slide-in-underline after:bg-slate-blue flex flex-nowrap items-center">
-                <Linkedin className="h-[1em]" strokeWidth="2.1px" />
-                <span className="font-semibold text-sm md:text-lg">linkedin</span>
+              <div className="slide-in-underline after:bg-blue-500 flex flex-nowrap items-center">
+                <Linkedin className="pb-0.5 pr-0.5 h-[1.2em] text-blue-600" strokeWidth="2.5px" />
+                <span>linkedin</span>
                 <CircleArrowRight className="h-[1em]" strokeWidth="2.5px" />
               </div>
             </ExternalLink>
 
             <ExternalLink href="https://github.com/wa-bha">
-              <div className="slide-in-underline after:bg-slate-blue flex flex-nowrap items-center">
-                <Github className="h-[1em]" strokeWidth="2.3px" />
-                <span className="font-semibold text-sm md:text-lg">github</span>
+              <div className="slide-in-underline after:bg-purple-600 flex flex-nowrap items-center">
+                <Github className="pr-0.5 h-[1.2em] text-purple-700" strokeWidth="2.3px" />
+                <span>github</span>
                 <CircleArrowRight className="h-[1em]" strokeWidth="2.5px" />
               </div>
             </ExternalLink>
