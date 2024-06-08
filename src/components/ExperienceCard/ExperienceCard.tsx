@@ -105,16 +105,16 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyNames }) => {
         </div>
 
         {/* Product header with logo */}
-        <div className={underlineVariants({ variant: companyName })}>
-          {logo}
+        <ExternalLink href={href}>
+          <div className={underlineVariants({ variant: companyName })}>
+            {logo}
 
-          <ExternalLink href={href}>
             <h6 className="text-lg font-semibold tracking-tighter">
               <span>{applicationName}</span>
               <CircleArrowRight className="pl-1 mb-0.5 inline-flex h-[1em]" strokeWidth="2.5px" />
             </h6>
-          </ExternalLink>
-        </div>
+          </div>
+        </ExternalLink>
       </div>
     </section>
   );

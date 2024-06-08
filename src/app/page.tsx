@@ -1,47 +1,18 @@
-import { Github, Linkedin, CircleArrowRight, ExternalLinkIcon, Copyright } from "lucide-react";
+import { ExternalLinkIcon, Copyright } from "lucide-react";
 
-import MadeInWellingtonBadge from "@/components/icons/MadeInWellingtonBadge";
-import FlagNZ from "@/components/icons/FlagNZ";
 import ExternalLink from "@/components/ExternalLink";
 import ExperienceCard from "@/components/ExperienceCard";
+import StaggeredHeroSection from "@/components/StaggeredHeroSection";
+import MadeInWellingtonBadge from "@/components/icons/MadeInWellingtonBadge";
 
 export default function Home() {
   return (
     <main>
       <header
         id="hero-section"
-        className="relative mb-10 h-svh md:h-[100svh] w-full flex justify-center items-center overflow-hidden"
+        className="relative mb-10 h-svh md:h-[100svh] w-full overflow-hidden"
       >
-        <div className="flex items-center justify-center flex-col">
-          <ExternalLink href="https://en.wikipedia.org/wiki/Flat_white">
-            <h1 className="text-[10vw] md:text-[6em]">Bhavit Wadhwa</h1>
-          </ExternalLink>
-
-          <div className="mt-[-0.5rem] sm:mt-[-1.25em] px-10 md:px-2 md:w-[48rem]">
-            <p className="font-medium text-center text-[5vw] tracking-tight md:text-[1.85em] md:leading-tight">
-              experienced software engineer based in wellington{" "}
-              <FlagNZ className="mb-1 inline-flex h-[1em]" />, skilled in front-end development
-            </p>
-          </div>
-
-          <div className="pt-[1em] flex flex-wrap justify-center gap-y-2 md:gap-x-5 font-bold md:text-lg tracking-tight">
-            <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/">
-              <div className="slide-in-underline after:bg-blue-500 flex flex-nowrap items-center">
-                <Linkedin className="pb-0.5 pr-0.5 h-[1.2em] text-blue-600" strokeWidth="2.5px" />
-                <span>linkedin</span>
-                <CircleArrowRight className="h-[1em]" strokeWidth="2.5px" />
-              </div>
-            </ExternalLink>
-
-            <ExternalLink href="https://github.com/wa-bha">
-              <div className="slide-in-underline after:bg-purple-600 flex flex-nowrap items-center">
-                <Github className="pr-0.5 h-[1.2em] text-purple-700" strokeWidth="2.3px" />
-                <span>github</span>
-                <CircleArrowRight className="h-[1em]" strokeWidth="2.5px" />
-              </div>
-            </ExternalLink>
-          </div>
-        </div>
+        <StaggeredHeroSection />
 
         <div className="m-2 absolute bottom-6 right-6">
           <MadeInWellingtonBadge className="w-28 md:w-32 lg:w-36 drop-shadow-md" />
