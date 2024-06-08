@@ -1,9 +1,12 @@
-import { ExternalLinkIcon, Copyright, SquareDashedMousePointer, MoveDown } from "lucide-react";
+import { ExternalLinkIcon, Copyright, SquareDashedMousePointer } from "lucide-react";
 
-import ExternalLink from "@/components/ExternalLink";
-import ExperienceCard from "@/components/ExperienceCard";
-import StaggeredHeroSection from "@/components/StaggeredHeroSection";
-import MadeInWellingtonBadge from "@/components/icons/MadeInWellingtonBadge";
+import {
+  ExternalLink,
+  ExperienceCard,
+  StaggeredHeroSection,
+  LevitatingDownArrow
+} from "@/components";
+import { MadeInWellingtonBadge } from "@/components/icons";
 
 export default function Home() {
   return (
@@ -14,13 +17,8 @@ export default function Home() {
       >
         <StaggeredHeroSection />
 
-        <div className="absolute inset-x-0 bottom-8 m-auto my-10 max-w-[90%] px-1 sm:px-5">
-          <MoveDown
-            className="text-grey md:ml-[-0.5rem]"
-            width="32"
-            height="32"
-            strokeWidth="1px"
-          />
+        <div className="absolute bottom-2 left-8 m-auto my-10 max-w-[90%] px-1 sm:px-5 md:inset-x-0 md:bottom-8">
+          <LevitatingDownArrow />
         </div>
 
         <div className="absolute bottom-6 right-6 m-2">

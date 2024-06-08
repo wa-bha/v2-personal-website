@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, CircleArrowRight } from "lucide-react";
 
-import FlagNZ from "@/components/icons/FlagNZ";
-import ExternalLink from "@/components/ExternalLink";
+import ExternalLink from "../ExternalLink";
+import { FlagNZ } from "../icons";
 
 const StaggeredHeroSection = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
