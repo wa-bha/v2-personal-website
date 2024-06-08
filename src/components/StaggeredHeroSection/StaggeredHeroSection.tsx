@@ -36,7 +36,7 @@ const StaggeredHeroSection = () => {
         }}
       >
         <ExternalLink href="https://en.wikipedia.org/wiki/Flat_white">
-          <h1 className="text-center text-[11vw] md:text-[6em]">Bhavit Wadhwa</h1>
+          <h1 className="text-center text-[10vw] md:text-[6em]">Bhavit Wadhwa</h1>
         </ExternalLink>
       </motion.div>
 
@@ -51,7 +51,7 @@ const StaggeredHeroSection = () => {
         }}
       >
         <div className="mt-[-0.5rem] sm:mt-[-1.25em] px-10 md:px-2 md:w-[48rem]">
-          <p className="font-medium text-center text-[5.5vw] tracking-tight md:text-[1.85em] md:leading-tight">
+          <p className="font-medium text-center text-[5.5vw] tracking-tight sm:text-[1.85em] md:leading-tight">
             experienced software engineer based in wellington{" "}
             <FlagNZ className="mb-1 inline-flex h-[1em]" />, skilled in front-end development
           </p>
@@ -68,7 +68,7 @@ const StaggeredHeroSection = () => {
           ease: "easeInOut"
         }}
       >
-        <div className="pt-[1em] flex flex-wrap justify-center gap-y-2 md:gap-x-5 font-bold md:text-lg tracking-tight">
+        <div className="pt-[1em] flex flex-wrap justify-center gap-x-2 gap-y-2 md:gap-x-5 font-bold md:text-lg tracking-tight">
           <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/">
             <div className="slide-in-underline after:bg-blue-500 flex flex-nowrap items-center">
               <Linkedin className="pb-0.5 pr-0.5 h-[1.2em] text-blue-600" strokeWidth="2.5px" />

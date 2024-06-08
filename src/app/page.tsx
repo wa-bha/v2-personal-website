@@ -1,4 +1,4 @@
-import { ExternalLinkIcon, Copyright } from "lucide-react";
+import { ExternalLinkIcon, Copyright, SquareDashedMousePointer, MoveDown } from "lucide-react";
 
 import ExternalLink from "@/components/ExternalLink";
 import ExperienceCard from "@/components/ExperienceCard";
@@ -14,6 +14,15 @@ export default function Home() {
       >
         <StaggeredHeroSection />
 
+        <div className="absolute bottom-0 inset-x-0 px-1 sm:px-5 my-10 max-w-[90%] m-auto">
+          <MoveDown
+            className="md:ml-[-0.5rem] text-grey"
+            width="32"
+            height="32"
+            strokeWidth="1px"
+          />
+        </div>
+
         <div className="m-2 absolute bottom-6 right-6">
           <MadeInWellingtonBadge className="w-28 md:w-32 lg:w-36 drop-shadow-md" />
         </div>
@@ -24,7 +33,13 @@ export default function Home() {
         className="px-1 sm:px-5 my-10 md:mb-24 max-w-[90%] m-auto 2xl:flex 2xl:justify-center"
       >
         <div className="w-full max-w-6xl 2xl:max-w-2xl">
-          <h2>Experience</h2>
+          <div className="flex items-baseline">
+            <h2>Experience</h2>
+            <div className="pl-4 hidden lg:flex items-center">
+              <SquareDashedMousePointer className="h-[1.1em]" strokeWidth="2px" />
+              <span className="pl-0.5 font-medium">hover</span>
+            </div>
+          </div>
 
           <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-x-4 gap-y-6">
             <ExperienceCard companyName="hatch" />
