@@ -56,7 +56,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cx(nohemi.variable, satoshi.variable)}>
-      <body className="antialiased font-satoshi bg-floral-white text-black ">
+      <body className="bg-floral-white font-satoshi text-black antialiased">
         <Navbar />
         {children}
         <Analytics />

@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-slate-blue font-black font-nohemi;
+    @apply font-nohemi font-black text-slate-blue;
   }
 
   h2 {
@@ -12,16 +12,16 @@
   }
 
   button {
-    @apply shadow-inner rounded-md hover:shadow-slate-blue hover:text-slate-blue transition-all duration-300;
+    @apply rounded-md shadow-inner transition-all duration-300 hover:text-slate-blue hover:shadow-slate-blue;
   }
 
   /* Fancy slide in animation (left to right) for links  */
   .slide-in-underline {
-    @apply px-1 block relative overflow-hidden;
+    @apply relative block overflow-hidden px-1;
   }
 
   .slide-in-underline::after {
-    @apply content-[''] absolute bottom-0 left-0 w-full h-2.5 opacity-0 transition-all duration-300;
+    @apply absolute bottom-0 left-0 h-2.5 w-full opacity-0 transition-all duration-300 content-[''];
     transform: translate3d(-100%, 0, 0);
   }
 
@@ -34,11 +34,11 @@
 
 /* Fancy underline */
 .heavy-underline {
-  @apply px-0.5 block relative overflow-hidden;
+  @apply relative block overflow-hidden px-0.5;
 }
 
 .heavy-underline::after {
-  @apply content-[''] absolute bottom-0.5 left-0 opacity-15 w-full h-2 duration-300;
+  @apply absolute bottom-0.5 left-0 h-2 w-full opacity-15 duration-300 content-[''];
 }
 
 .heavy-underline:hover::after,

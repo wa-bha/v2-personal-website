@@ -13,7 +13,7 @@ const MadeInWellingtonBadge = ({ className }: { className?: string }) => {
         <path id="circlePath" d="M 70, 70 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" />
       </defs>
 
-      <g id="spinning-text" className="animate-spin-slow origin-center">
+      <g id="spinning-text" className="origin-center animate-spin-slow">
         <text fill="#353535" fontSize="16" letterSpacing="2" className="font-satoshi font-medium">
           <textPath href="#circlePath">MADE IN WELLINGTON, NZ ~</textPath>
         </text>

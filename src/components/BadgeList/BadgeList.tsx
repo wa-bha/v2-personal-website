@@ -7,7 +7,7 @@ interface BadgeListProps extends BadgeVariants {
 
 const BadgeList: React.FC<BadgeListProps> = ({ badges, variant }) => {
   return (
-    <div className="pt-1.5 flex flex-wrap gap-x-1 gap-y-1">
+    <div className="flex flex-wrap gap-x-1 gap-y-1 pt-1.5">
       {badges.map((badge, index) => (
         <Badge key={index} variant={variant}>
           {badge}

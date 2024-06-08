@@ -24,7 +24,7 @@ const StaggeredHeroSection = () => {
   };
 
   return (
-    <section className="h-full flex flex-col justify-center items-center">
+    <section className="flex h-full flex-col items-center justify-center">
       <motion.div
         initial="hidden"
         animate={hasAnimated ? "visible" : "hidden"}
@@ -50,8 +50,8 @@ const StaggeredHeroSection = () => {
           ease: "easeInOut"
         }}
       >
-        <div className="mt-[-0.5rem] sm:mt-[-1.25em] px-10 md:px-2 md:w-[48rem]">
-          <p className="font-medium text-center text-[5.5vw] tracking-tight sm:text-[1.85em] md:leading-tight">
+        <div className="mt-[-0.5rem] px-10 sm:mt-[-1.25em] md:w-[48rem] md:px-2">
+          <p className="text-center text-[5.5vw] font-medium tracking-tight sm:text-[1.85em] md:leading-tight">
             experienced software engineer based in wellington{" "}
             <FlagNZ className="mb-1 inline-flex h-[1em]" />, skilled in front-end development
           </p>
@@ -68,18 +68,18 @@ const StaggeredHeroSection = () => {
           ease: "easeInOut"
         }}
       >
-        <div className="pt-[1em] flex flex-wrap justify-center gap-x-2 gap-y-2 md:gap-x-5 font-bold md:text-lg tracking-tight">
+        <div className="flex flex-wrap justify-center gap-x-2 gap-y-2 pt-[1em] font-bold tracking-tight md:gap-x-5 md:text-lg">
           <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/">
-            <div className="slide-in-underline after:bg-blue-500 flex flex-nowrap items-center">
-              <Linkedin className="pb-0.5 pr-0.5 h-[1.2em] text-blue-600" strokeWidth="2.5px" />
+            <div className="slide-in-underline flex flex-nowrap items-center after:bg-blue-500">
+              <Linkedin className="h-[1.2em] pb-0.5 pr-0.5 text-blue-600" strokeWidth="2.5px" />
               <span>linkedin</span>
               <CircleArrowRight className="h-[1em]" strokeWidth="2.5px" />
             </div>
           </ExternalLink>
 
           <ExternalLink href="https://github.com/wa-bha">
-            <div className="slide-in-underline after:bg-purple-600 flex flex-nowrap items-center">
-              <Github className="pr-0.5 h-[1.2em] text-purple-700" strokeWidth="2.3px" />
+            <div className="slide-in-underline flex flex-nowrap items-center after:bg-purple-600">
+              <Github className="h-[1.2em] pr-0.5 text-purple-700" strokeWidth="2.3px" />
               <span>github</span>
               <CircleArrowRight className="h-[1em]" strokeWidth="2.5px" />
             </div>

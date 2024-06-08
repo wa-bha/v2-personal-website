@@ -33,7 +33,7 @@ const companies: Record<CompanyNames, CompanyInfo> = {
     description: "Jarden & FNZ Joint Venture",
     location: "Wellington, NZ",
     href: "https://www.hatchinvest.nz/",
-    logo: <HatchLogo className="w-5 h-5" />,
+    logo: <HatchLogo className="h-5 w-5" />,
     image: hatch
   },
   jarden: {
@@ -41,7 +41,7 @@ const companies: Record<CompanyNames, CompanyInfo> = {
     description: "Jarden",
     location: "Wellington, NZ",
     href: "https://www.jardendirect.co.nz/",
-    logo: <JardenLogo className="w-5 h-5" />,
+    logo: <JardenLogo className="h-5 w-5" />,
     image: jarden
   },
   hortplus: {
@@ -49,7 +49,7 @@ const companies: Record<CompanyNames, CompanyInfo> = {
     description: "HortPlus",
     location: "Hawkes Bay, NZ (Remote)",
     href: "https://www.hortplus.com/spray-plan-manager/",
-    logo: <HortplusLogo className="w-5 h-5" />,
+    logo: <HortplusLogo className="h-5 w-5" />,
     image: hortplus
   }
 };
@@ -87,7 +87,7 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyNames }) => {
       {/* Image */}
       <WobbleCard href={href} containerClassName={backgroundVariants({ variant: companyName })}>
         <Image
-          className="top-10 md:top-24 right-[-2rem] absolute rounded-lg object-contain"
+          className="absolute right-[-2rem] top-10 rounded-lg object-contain md:top-24"
           src={image}
           width={500}
           height={500}
@@ -98,10 +98,10 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyNames }) => {
       <div className="mx-2 mt-2 flex flex-col space-y-1.5">
         {/* Company and location */}
         <div className="flex flex-col">
-          <span className="text-sm font-medium text-gray-800 tracking-tight leading-tight">
+          <span className="text-sm font-medium leading-tight tracking-tight text-gray-800">
             {description}
           </span>
-          <span className="text-xs text-slate-500 tracking-tight">{location}</span>
+          <span className="text-xs tracking-tight text-slate-500">{location}</span>
         </div>
 
         {/* Product header with logo */}
@@ -111,7 +111,7 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyNames }) => {
 
             <h6 className="text-lg font-semibold tracking-tighter">
               <span>{applicationName}</span>
-              <CircleArrowRight className="pl-1 mb-0.5 inline-flex h-[1em]" strokeWidth="2.5px" />
+              <CircleArrowRight className="mb-0.5 inline-flex h-[1em] pl-1" strokeWidth="2.5px" />
             </h6>
           </div>
         </ExternalLink>
