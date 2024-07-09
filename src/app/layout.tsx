@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import Navbar from "@/components/Navbar";
+import { Navbar } from "@/components";
 
 const nohemi = localFont({ src: "../../public/fonts/Nohemi-VF.ttf", variable: "--font-nohemi" });
 const satoshi = localFont({
