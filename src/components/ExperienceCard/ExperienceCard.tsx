@@ -68,7 +68,7 @@ const underlineVariants = cva(
   }
 );
 
-const backgroundVariants = cva("w-full sm:h-60 bg-gray-300 drop-shadow-md", {
+const backgroundVariants = cva("w-full sm:h-56 bg-gray-300 drop-shadow-md", {
   variants: {
     variant: {
       default: "bg-slate-50",
@@ -87,7 +87,7 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyNames }) => {
       {/* Image */}
       <WobbleCard href={href} containerClassName={backgroundVariants({ variant: companyName })}>
         <Image
-          className="absolute right-[-2rem] top-10 rounded-lg object-contain md:top-24"
+          className="absolute right-[-2rem] top-10 rounded-lg object-contain"
           src={image}
           width={500}
           height={500}

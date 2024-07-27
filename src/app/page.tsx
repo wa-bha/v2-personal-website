@@ -1,11 +1,6 @@
 import { ExternalLinkIcon, Copyright, SquareDashedMousePointer } from "lucide-react";
 
-import {
-  ExternalLink,
-  ExperienceCard,
-  StaggeredHeroSection,
-  LevitatingDownArrow
-} from "@/components";
+import { ExternalLink, ExperienceCard, StaggeredHeroSection } from "@/components";
 import { MadeInWellingtonBadge } from "@/components/icons";
 
 export default function Home() {
@@ -16,10 +11,6 @@ export default function Home() {
         className="relative mb-10 h-svh w-full overflow-hidden md:h-[100svh]"
       >
         <StaggeredHeroSection />
-
-        <div className="absolute bottom-2 left-8 m-auto my-10 max-w-[90%] px-1 sm:px-5 md:inset-x-0 md:bottom-8">
-          <LevitatingDownArrow />
-        </div>
 
         <div className="absolute bottom-6 right-6 m-2">
           <MadeInWellingtonBadge className="w-28 drop-shadow-md md:w-32 lg:w-36" />

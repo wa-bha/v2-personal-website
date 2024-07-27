@@ -6,8 +6,8 @@ import { MoveDown } from "lucide-react";
 const LevitatingDownArrow = () => {
   return (
     <motion.div
-      initial={{ y: -2 }}
-      animate={{ y: -8 }}
+      initial={{ y: 0 }}
+      animate={{ y: 16 }}
       transition={{
         repeat: Infinity,
         repeatType: "mirror",
@@ -16,10 +16,10 @@ const LevitatingDownArrow = () => {
       }}
     >
       <MoveDown
-        className="text-gray-500 md:ml-[-0.5rem]"
+        className="text-gray-300 md:ml-[-0.5rem]"
         width="32"
         height="32"
-        strokeWidth="1.2px"
+        strokeWidth="2px"
       />
     </motion.div>
   );

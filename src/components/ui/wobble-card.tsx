@@ -54,9 +54,9 @@ export const WobbleCard = ({ children, containerClassName, className, href }: Pr
           <motion.div
             style={{
               transform: isHovering
-                ? `translate3d(${-mousePosition.x}px, ${-mousePosition.y}px, 0) scale3d(1.03, 1.03, 1)`
+                ? `translate3d(${-mousePosition.x}px, ${-mousePosition.y}px, 0) scale3d(1.08, 1.08, 1)`
                 : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
-              transition: "transform 0.1s ease-out"
+              transition: "transform 0.2s ease-out"
             }}
             className={cn("h-full px-4 py-20 sm:px-10", className)}
           >

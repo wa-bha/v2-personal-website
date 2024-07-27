@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, CircleArrowRight } from "lucide-react";
 
+import LevitatingDownArrow from "../LevitatingDownArrow";
 import ExternalLink from "../ExternalLink";
 import { FlagNZ } from "../icons";
 
@@ -31,7 +32,7 @@ const StaggeredHeroSection = () => {
         variants={variants(40)}
         transition={{
           delay: 0.3,
-          duration: 0.8,
+          duration: 1.4,
           ease: "easeInOut"
         }}
       >
@@ -46,7 +47,7 @@ const StaggeredHeroSection = () => {
         variants={variants(30)}
         transition={{
           delay: 1.2,
-          duration: 0.9,
+          duration: 0.8,
           ease: "easeInOut"
         }}
       >
@@ -59,6 +60,7 @@ const StaggeredHeroSection = () => {
       </motion.div>
 
       <motion.div
+        className="relative"
         initial="hidden"
         animate={hasAnimated ? "visible" : "hidden"}
         variants={variants(20)}
@@ -85,7 +87,15 @@ const StaggeredHeroSection = () => {
             </div>
           </ExternalLink>
         </div>
+
+        <div className="invisible absolute inset-x-0 bottom-[-8rem] flex justify-center md:visible">
+          <LevitatingDownArrow />
+        </div>
       </motion.div>
+
+      <div className="absolute bottom-2 left-8 m-auto my-10 max-w-[90%] px-1 sm:px-5 md:invisible md:inset-x-0 md:bottom-8">
+        <LevitatingDownArrow />
+      </div>
     </section>
   );
 };
