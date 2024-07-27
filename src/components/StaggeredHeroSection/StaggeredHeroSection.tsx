@@ -54,7 +54,7 @@ const StaggeredHeroSection = () => {
         <div className="mt-[-0.5rem] px-10 sm:mt-[-1.25em] md:w-[48rem] md:px-2">
           <p className="text-center text-[5.5vw] font-medium tracking-tight sm:text-[1.85em] md:leading-tight">
             experienced software engineer based in wellington{" "}
-            <FlagNZ className="mb-1 inline-flex h-[1em]" />, skilled in front-end development
+            <FlagNZ className="mb-1 inline-flex h-[1em]" />, skilled in full-stack development
           </p>
         </div>
       </motion.div>
