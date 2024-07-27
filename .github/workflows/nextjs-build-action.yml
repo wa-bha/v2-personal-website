@@ -1,6 +1,4 @@
-name: Check NextJS Lint and Build
-
-# Run on
+# When should it run...
 on:
   # Run on push events to any branch
   push:
