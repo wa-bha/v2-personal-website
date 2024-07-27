@@ -1,6 +1,8 @@
-# When should it run...
+name: GH Actions
+
+# It should it run on...
 on:
-  # Run on push events to any branch
+  # Push events to any branch
   push:
     branches:
       - "*"
