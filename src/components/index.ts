@@ -1,4 +1,3 @@
-export { default as LevitatingDownArrow } from "./LevitatingDownArrow";
 export { default as BadgeList } from "./BadgeList";
 export { default as ExternalLink } from "./ExternalLink";
 export { default as ExperienceCard } from "./ExperienceCard";
