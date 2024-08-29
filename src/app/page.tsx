@@ -1,7 +1,7 @@
 import { ExternalLinkIcon, Copyright, SquareDashedMousePointer } from "lucide-react";
 
 import { ExternalLink, ExperienceCard, StaggeredHeroSection } from "@/components";
-import { MadeInWellingtonBadge } from "@/components/icons";
+import { FlagNZ, MadeInWellingtonBadge } from "@/components/icons";
 
 export default function Home() {
   return (
@@ -59,13 +59,14 @@ export default function Home() {
               </ExternalLink>
               , I&apos;m helping build a new investing platform that expands access into new
               markets. Their mission resonates deeply with me: to make wealth generation more
-              accessible for all Kiwi investors.
+              accessible for all Kiwi investors 💸
             </p>
 
             <p>
-              Outside of work, you&apos;ll often find me exploring the beautiful landscapes of NZ.
-              Whether it&apos;s carving through snow on a snowboard 🏂, hiking new trails or playing
-              a game of field hockey, I love spending time outdoors.
+              Outside of work, you&apos;ll often find me exploring the beautiful landscapes of NZ{" "}
+              <FlagNZ className="mb-1 inline-flex h-[1em]" />. Whether it&apos;s carving through
+              snow on a snowboard 🏂, hiking new trails or playing a game of field hockey, I love
+              spending time outdoors.
             </p>
           </div>
         </div>

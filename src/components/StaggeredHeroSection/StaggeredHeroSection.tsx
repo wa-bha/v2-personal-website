@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, CircleArrowRight } from "lucide-react";
 
 import ExternalLink from "../ExternalLink";
-import { FlagNZ } from "../icons";
+import TextEffect from "../TextEffect";
 
 const StaggeredHeroSection = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -35,28 +35,27 @@ const StaggeredHeroSection = () => {
           ease: "easeInOut"
         }}
       >
-        <ExternalLink href="https://en.wikipedia.org/wiki/Flat_white">
+        <ExternalLink href="https://en.wikipedia.org/wiki/Flat_white#:~:text=originates from Wellington">
           <h1 className="text-center text-[10vw] md:text-[6em]">Bhavit Wadhwa</h1>
         </ExternalLink>
       </motion.div>
 
-      <motion.div
-        initial="hidden"
-        animate={hasAnimated ? "visible" : "hidden"}
-        variants={variants(30)}
-        transition={{
-          delay: 1.2,
-          duration: 0.8,
-          ease: "easeInOut"
-        }}
-      >
-        <div className="mt-[-0.5rem] px-10 sm:mt-[-1.25em] md:w-[48rem] md:px-2">
-          <p className="text-center text-[5.5vw] font-medium tracking-tight sm:text-[1.85em] md:leading-tight">
-            experienced software engineer based in wellington{" "}
-            <FlagNZ className="mb-1 inline-flex h-[1em]" />, skilled in full-stack development
-          </p>
-        </div>
-      </motion.div>
+      <div className="mt-[-0.5rem] px-10 sm:mt-[-1.25em] md:w-[48rem] md:px-2">
+        <TextEffect
+          per="word"
+          as="h3"
+          preset="blur"
+          variants={{
+            container: {
+              hidden: { opacity: 0 },
+              visible: { opacity: 1, transition: { staggerChildren: 0.05, delayChildren: 2 } }
+            }
+          }}
+          className="text-center text-[5.5vw] font-medium tracking-tight sm:text-[1.85em] md:leading-tight"
+        >
+          experienced software engineer based in wellington, skilled in full-stack development
+        </TextEffect>
+      </div>
 
       <motion.div
         initial="hidden"
