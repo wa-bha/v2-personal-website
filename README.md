@@ -9,26 +9,27 @@ _^ screenshot last updated on 20th april_
 ## TODO: ✅
 
 - ✅ first draft with new design (feature parity with v1)
-- ✅ deploy to vercel
-- ✅ move the domains around
-- ✅ add experience section
-- ✅ github workflows -> build and lint check
-- ✅ ^ follow-on, deploy to vercel after workflow passes [@see vercel docs](https://vercel.com/guides/how-can-i-use-github-actions-with-vercel)
+- ✅ deployed to vercel
+- ✅ domain setup
+- ✅ added experience section
+- ✅ set up github workflows -> build and lint check
+- ✅ automatic deployments to vercel after workflow passes [@see vercel docs](https://vercel.com/guides/how-can-i-use-github-actions-with-vercel)
 
-**_and now for my more trivial ideas..._** ⬜
+**_some wacky future enhancement ideas..._** ⬜
 
-- ⬜ add the big floating snowboard 🏂
-- ⬜ mouse trail with flat white's ☕ [@see "Mouse Image Trail"](https://www.hover.dev/components/other#mouse-image-trail)
-- ⬜ implement blog framework for nextJS, write ✍️ my first article? [@see prismic](https://prismic.io/blog/nextjs-blog-tutorial)
+- ⬜ add a floating snowboard 🏂
+- ⬜ implement a mouse trail with flat white's ☕ [@see "Mouse Image Trail"](https://www.hover.dev/components/other#mouse-image-trail)
+- ⬜ set up a blog framework using nextJS [@see prismic](https://prismic.io/blog/nextjs-blog-tutorial)
+- ⬜ ^ write my first article ✍️
 - ⬜ hover effect over experience cards [@see "Following Pointer"](https://ui.aceternity.com/components/following-pointer)
 
 <br />
 
 **the stack: 🛠️**
 
-- React with typescript (NextJS)
-- Tailwind css (with a sprinkle of reusable components by [shadcn/ui](https://ui.shadcn.com/) and [AceternityUI](https://ui.aceternity.com/))
-- Hosted on Vercel
+- _frontend:_ React with typescript (NextJS)
+- _styling:_ Tailwind css (with a sprinkle of reusable components by [shadcn/ui](https://ui.shadcn.com/), [aceternityUI](https://ui.aceternity.com/) and [motion-primitives](https://motion-primitives.com/))
+- _hosting:_ Vercel
 
 **getting started: 🏁**
 
