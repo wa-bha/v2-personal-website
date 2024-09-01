@@ -2,10 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-
-import InView from "./InView";
-import ExternalLink from "./ExternalLink";
-import { FlagNZ } from "./icons";
+import { ExternalLink, InView } from "@/components/common";
+import { FlagNZ } from "@/components/icons";
 
 const paragraphVariants = {
   hidden: { opacity: 0, scale: 0.98, filter: "blur(10px)" },
@@ -16,7 +14,7 @@ const paragraphVariants = {
   }
 };
 
-const BioContentSection = () => {
+const BioSection = () => {
   return (
     <InView
       viewOptions={{ once: true, margin: "0px 0px -200px 0px" }}
@@ -39,10 +37,14 @@ const BioContentSection = () => {
           transition={{ duration: 0.5 }}
           className="mb-4 font-semibold tracking-[-0.02em]"
         >
-          I make websites beautiful, blending design and functionality to create exceptional user
+          {/* I make websites beautiful, blending design and functionality to create exceptional user
           experiences. I&apos;m passionate about collaborating with outstanding teams and
           design-focused businesses, especially those driving positive change through innovative
-          solutions.
+          solutions.  */}
+          I&apos;m a developer who&apos;s all about crafting beautiful websites. I love merging
+          design and functionality to create exceptional user experiences that people genuinely
+          enjoy. I&apos;m passionate about working with outstanding teams and design-focused
+          businesses that are driving positive change.
         </motion.p>
 
         <motion.p variants={paragraphVariants} transition={{ duration: 0.6 }} className="mb-4">
@@ -66,4 +68,4 @@ const BioContentSection = () => {
   );
 };
 
-export default BioContentSection;
+export default BioSection;

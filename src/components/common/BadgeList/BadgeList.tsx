@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, BadgeVariants } from "../ui/badge";
+import { Badge, BadgeVariants } from "./badge";
 
 interface BadgeListProps extends BadgeVariants {
   badges: string[];

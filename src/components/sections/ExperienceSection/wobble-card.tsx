@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
-import ExternalLink from "../ExternalLink";
+import ExternalLink from "../../common/ExternalLink";
 
 interface Props {
   children: React.ReactNode;

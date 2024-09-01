@@ -3,11 +3,9 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, CircleArrowRight } from "lucide-react";
+import { ExternalLink, TextEffect } from "@/components/common";
 
-import ExternalLink from "../ExternalLink";
-import TextEffect from "../TextEffect";
-
-const StaggeredHeroSection = () => {
+const HeroSection = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
@@ -24,7 +22,7 @@ const StaggeredHeroSection = () => {
   };
 
   return (
-    <section className="flex h-full flex-col items-center justify-center">
+    <div className="flex h-full flex-col items-center justify-center">
       <motion.div
         initial="hidden"
         animate={hasAnimated ? "visible" : "hidden"}
@@ -85,8 +83,8 @@ const StaggeredHeroSection = () => {
           </ExternalLink>
         </div>
       </motion.div>
-    </section>
+    </div>
   );
 };
 
-export default StaggeredHeroSection;
+export default HeroSection;

@@ -5,11 +5,11 @@ import Image, { StaticImageData } from "next/image";
 import { cva } from "class-variance-authority";
 import { CircleArrowRight } from "lucide-react";
 
-import ExternalLink from "../ExternalLink";
-import HatchLogo from "../icons/HatchLogo";
-import JardenLogo from "../icons/JardenLogo";
-import HortplusLogo from "../icons/HortPlusLogo";
-import { WobbleCard } from "../ui/wobble-card";
+import ExternalLink from "../../common/ExternalLink";
+import HatchLogo from "../../icons/HatchLogo";
+import JardenLogo from "../../icons/JardenLogo";
+import HortplusLogo from "../../icons/HortPlusLogo";
+import { WobbleCard } from "./wobble-card";
 
 import jarden from "/public/images/jarden.jpg";
 import hatch from "/public/images/hatch.jpg";

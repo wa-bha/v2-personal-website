@@ -1,4 +1,4 @@
-import { ExternalLink } from "@/components";
+import { ExternalLink } from "@/components/common";
 
 const NotFound = () => {
   return (
