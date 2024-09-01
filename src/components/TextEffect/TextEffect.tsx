@@ -15,7 +15,6 @@ type TextEffectProps = {
   };
   className?: string;
   preset?: PresetType;
-  delay?: number;
 };
 
 const defaultContainerVariants: Variants = {
@@ -103,8 +102,7 @@ export function TextEffect({
   as = "p",
   variants,
   className,
-  preset,
-  delay = 0
+  preset
 }: TextEffectProps) {
   const words = children.split(/(\S+)/);
   const MotionTag = motion[as as keyof typeof motion];
@@ -120,7 +118,6 @@ export function TextEffect({
       animate="visible"
       aria-label={children}
       variants={containerVariants}
-      transition={{ delayChildren: delay }}
       className={className}
     >
       {words.map((word, wordIndex) => (

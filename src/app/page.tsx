@@ -1,7 +1,8 @@
 import { ExternalLinkIcon, Copyright, SquareDashedMousePointer } from "lucide-react";
 
+import BioContentSection from "@/components/BioContentSection";
 import { ExternalLink, ExperienceCard, StaggeredHeroSection } from "@/components";
-import { FlagNZ, MadeInWellingtonBadge } from "@/components/icons";
+import { MadeInWellingtonBadge } from "@/components/icons";
 
 export default function Home() {
   return (
@@ -45,31 +46,7 @@ export default function Home() {
         <div className="max-w-2xl">
           <h2>Bio</h2>
 
-          <div className="flex flex-col gap-4 pt-6 font-satoshi md:text-lg">
-            <p className="font-semibold tracking-[-0.02em]">
-              I make websites beautiful, blending design and functionality to create exceptional
-              user experiences. I&apos;m passionate about collaborating with outstanding teams and
-              design-focused businesses, especially those driving positive change through innovative
-              solutions.
-            </p>
-
-            <p>
-              At{" "}
-              <ExternalLink href="https://www.hatchinvest.nz/" className="inline-flex w-fit">
-                <span className="heavy-underline after:bg-slate-blue">Hatch</span>
-              </ExternalLink>
-              , I&apos;m proud to contribute to a platform that opens new investment opportunities,
-              making wealth generation more accessible for Kiwi investors 💸. Their mission to
-              empower everyday people resonates deeply with me.
-            </p>
-
-            <p>
-              Beyond coding, you&apos;ll find me enjoying the outdoors in New Zealand{" "}
-              <FlagNZ className="mb-1 inline-flex h-[1em]" /> — whether it&apos;s carving through
-              snow on a snowboard 🏂, hiking new trails or playing field hockey, I love spending
-              time outdoors.
-            </p>
-          </div>
+          <BioContentSection />
         </div>
       </section>
 

@@ -48,7 +48,7 @@ const StaggeredHeroSection = () => {
           variants={{
             container: {
               hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.05, delayChildren: 2 } }
+              visible: { opacity: 1, transition: { staggerChildren: 0.07, delayChildren: 1.4 } }
             }
           }}
           className="text-center text-[5.5vw] font-medium tracking-tight sm:text-[1.85em] md:leading-tight"
@@ -62,7 +62,7 @@ const StaggeredHeroSection = () => {
         animate={hasAnimated ? "visible" : "hidden"}
         variants={variants(20)}
         transition={{
-          delay: 1.7,
+          delay: 2.5,
           duration: 0.9,
           ease: "easeInOut"
         }}
