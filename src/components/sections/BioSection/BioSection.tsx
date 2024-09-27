@@ -37,31 +37,27 @@ const BioSection = () => {
           transition={{ duration: 0.5 }}
           className="mb-4 font-semibold tracking-[-0.02em]"
         >
-          {/* I make websites beautiful, blending design and functionality to create exceptional user
-          experiences. I&apos;m passionate about collaborating with outstanding teams and
-          design-focused businesses, especially those driving positive change through innovative
-          solutions.  */}
-          I&apos;m a developer who&apos;s all about crafting beautiful websites. I love merging
-          design and functionality to create exceptional user experiences that people genuinely
-          enjoy. I&apos;m passionate about working with outstanding teams and design-focused
-          businesses that are driving positive change.
+          I&apos;m a highly motivated full-stack developer 👨‍💻 with a strong focus on crafting clean,
+          functional user experiences. I enjoy collaborating with talented teams to turn design
+          ideas into exceptional products.
         </motion.p>
 
         <motion.p variants={paragraphVariants} transition={{ duration: 0.6 }} className="mb-4">
           At{" "}
           <ExternalLink href="https://www.hatchinvest.nz/" className="inline-flex w-fit">
-            <span className="heavy-underline after:bg-slate-blue">Hatch</span>
+            <span className="font-bold text-hatch-purple hover:underline hover:decoration-hatch-purple hover:decoration-[3px] hover:underline-offset-2">
+              Hatch
+            </span>
           </ExternalLink>
-          , I&apos;m proud to contribute to a platform that opens new investment opportunities,
-          making wealth generation more accessible for Kiwi investors 💸. Their mission to empower
-          everyday people resonates deeply with me.
+          , I&apos;m helping build a platform that provides Kiwi investors 💸 with greater access to
+          global markets. I&apos;m proud to be part of a team that makes wealth generation simpler
+          and more accessible for everyone.
         </motion.p>
 
         <motion.p variants={paragraphVariants} transition={{ duration: 0.9 }} className="mb-4">
-          Beyond coding, you&apos;ll find me enjoying the outdoors in New Zealand{" "}
-          <FlagNZ className="mb-1 inline-flex h-[1em]" /> — whether it&apos;s carving through snow
-          on a snowboard 🏂, hiking new trails or playing field hockey, I love spending time
-          outdoors.
+          Outside of coding, I&apos;m usually exploring New Zealand{" "}
+          <FlagNZ className="mb-1 inline-flex h-[1em]" /> (and the 🌏) — whether it&apos;s out on a
+          snowboard, hiking new trails or playing field hockey, I love spending time outdoors.
         </motion.p>
       </div>
     </InView>
