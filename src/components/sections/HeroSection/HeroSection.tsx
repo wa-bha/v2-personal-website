@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, CircleArrowRight } from "lucide-react";
+import { Github, Linkedin, CircleArrowRight, FileJson2 } from "lucide-react";
 import { ExternalLink, TextEffect } from "@/components/common";
 
 const HeroSection = () => {
@@ -51,7 +51,7 @@ const HeroSection = () => {
           }}
           className="text-center text-[5.5vw] font-medium tracking-tight sm:text-[1.85em] md:leading-tight"
         >
-          experienced software engineer based in wellington, skilled in full-stack development
+          Experienced software engineer based in Wellington NZ, skilled in full-stack development
         </TextEffect>
       </div>
 
@@ -68,7 +68,7 @@ const HeroSection = () => {
         <div className="flex flex-wrap justify-center gap-x-2 gap-y-2 pt-[1em] font-bold tracking-tight md:gap-x-5 md:text-lg">
           <ExternalLink href="https://www.linkedin.com/in/bhavit-wadhwa/">
             <div className="slide-in-underline flex flex-nowrap items-center after:bg-blue-500">
-              <Linkedin className="h-[1.2em] pb-0.5 pr-0.5 text-blue-600" strokeWidth="2.5px" />
+              <Linkedin className="h-[1.2em] pr-1 text-blue-600" strokeWidth="2.5px" />
               <span>linkedin</span>
               <CircleArrowRight className="h-[1em]" strokeWidth="2.5px" />
             </div>
@@ -76,8 +76,16 @@ const HeroSection = () => {
 
           <ExternalLink href="https://github.com/wa-bha">
             <div className="slide-in-underline flex flex-nowrap items-center after:bg-purple-600">
-              <Github className="h-[1.2em] pr-0.5 text-purple-700" strokeWidth="2.3px" />
+              <Github className="h-[1.2em] pr-1 text-purple-700" strokeWidth="2.3px" />
               <span>github</span>
+              <CircleArrowRight className="h-[1em]" strokeWidth="2.5px" />
+            </div>
+          </ExternalLink>
+
+          <ExternalLink href="https://github.com/wa-bha/v2-personal-website">
+            <div className="slide-in-underline flex flex-nowrap items-center after:bg-[#2b3137]">
+              <FileJson2 className="h-[1.2em] pr-1 text-[#2b3137]" strokeWidth="2.3px" />
+              <span>this website</span>
               <CircleArrowRight className="h-[1em]" strokeWidth="2.5px" />
             </div>
           </ExternalLink>
