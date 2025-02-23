@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, CircleArrowRight, FileJson2 } from "lucide-react";
-import { ExternalLink, TextEffect } from "@/components/common";
+import { ExternalLink, TextGenerateEffect } from "@/components/common";
 
 const HeroSection = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -39,20 +39,10 @@ const HeroSection = () => {
       </motion.div>
 
       <div className="mt-[-0.5rem] px-10 sm:mt-[-1.25em] md:w-[48rem] md:px-2">
-        <TextEffect
-          per="word"
-          as="h3"
-          preset="blur"
-          variants={{
-            container: {
-              hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.07, delayChildren: 1.4 } }
-            }
-          }}
-          className="text-center text-[5.5vw] font-medium tracking-tight sm:text-[1.85em] md:leading-tight"
-        >
-          Experienced software engineer based in Wellington NZ, skilled in full-stack development
-        </TextEffect>
+        <TextGenerateEffect
+          words="Experienced software engineer based in Wellington NZ, skilled in full-stack development."
+          textClassname="text-center text-[5.5vw] font-medium tracking-tight sm:text-[1.85em] md:leading-tight"
+        />
       </div>
 
       <motion.div
