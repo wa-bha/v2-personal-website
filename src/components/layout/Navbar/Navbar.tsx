@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <nav
       id="nav-bar"
-      className="fixed bottom-auto left-0 right-0 top-0 z-10 h-14 bg-gradient-to-b from-floral-white shadow-md"
+      className="fixed bottom-auto left-0 right-0 top-0 z-10 h-14 bg-linear-to-b from-floral-white shadow-md"
     >
       <div className="m-auto flex h-full max-w-[90%] items-center px-5">
         <div className="flex flex-row space-x-4 pr-10">

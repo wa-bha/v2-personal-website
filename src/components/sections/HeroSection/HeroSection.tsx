@@ -38,7 +38,7 @@ const HeroSection = () => {
         </ExternalLink>
       </motion.div>
 
-      <div className="mt-[-0.5rem] px-10 sm:mt-[-1.25em] md:w-[48rem] md:px-2">
+      <div className="-mt-2 px-10 sm:mt-[-1.25em] md:w-3xl md:px-2">
         <TextGenerateEffect
           words="Experienced software engineer based in Wellington NZ, skilled in full-stack development."
           textClassname="text-center text-[5.5vw] font-medium tracking-tight sm:text-[1.85em] md:leading-tight"

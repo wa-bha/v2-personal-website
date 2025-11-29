@@ -68,7 +68,7 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyName }) => {
     <section>
       <WobbleCard href={href} containerClassName={`w-full sm:h-56 drop-shadow-md ${bgClass}`}>
         <Image
-          className="absolute right-[-2rem] top-10 rounded-lg object-contain"
+          className="absolute -right-8 top-10 rounded-lg object-contain"
           src={image}
           width={500}
           height={500}
@@ -86,7 +86,7 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyName }) => {
 
         <ExternalLink href={href}>
           <div
-            className={`slide-in-underline ml-[-0.25rem] flex w-fit items-center space-x-1.5 ${underlineClass}`}
+            className={`slide-in-underline -ml-1 flex w-fit items-center space-x-1.5 ${underlineClass}`}
           >
             <Logo className="h-5 w-5" />
             <h6 className="text-xl font-semibold tracking-tighter">
