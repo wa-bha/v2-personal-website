@@ -89,7 +89,7 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyName }) => {
             className={`slide-in-underline ml-[-0.25rem] flex w-fit items-center space-x-1.5 ${underlineClass}`}
           >
             <Logo className="h-5 w-5" />
-            <h6 className="text-lg font-semibold tracking-tighter">
+            <h6 className="text-xl font-semibold tracking-tighter">
               {name}
               <CircleArrowRight className="mb-0.5 inline-flex h-[1em] pl-1" strokeWidth="2.5px" />
             </h6>
