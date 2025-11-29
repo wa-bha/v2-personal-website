@@ -68,7 +68,7 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyName }) => {
     <section>
       <WobbleCard href={href} containerClassName={`w-full sm:h-56 drop-shadow-md ${bgClass}`}>
         <Image
-          className="absolute -right-8 top-10 rounded-lg object-contain"
+          className="absolute top-10 -right-8 rounded-lg object-contain"
           src={image}
           width={500}
           height={500}
@@ -78,7 +78,7 @@ const ExperienceCard = ({ companyName }: { companyName: CompanyName }) => {
 
       <div className="mx-2 mt-2 flex flex-col space-y-1.5">
         <div>
-          <p className="text-sm font-medium leading-tight tracking-tight text-gray-800">
+          <p className="text-sm leading-tight font-medium tracking-tight text-gray-800">
             {description}
           </p>
           <p className="text-xs tracking-tight text-slate-500">{location}</p>

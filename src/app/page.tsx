@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <header id="#" className="relative mb-10 h-svh w-full overflow-hidden md:h-svh">
         <HeroSection />
-        <div className="absolute bottom-6 right-6 m-2">
+        <div className="absolute right-6 bottom-6 m-2">
           <MadeInWellingtonBadge className="w-28 drop-shadow-md md:w-32 lg:w-36" />
         </div>
       </header>

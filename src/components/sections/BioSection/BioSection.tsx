@@ -31,7 +31,7 @@ const BioSection = () => {
         }
       }}
     >
-      <div className="flex flex-col pt-6 font-satoshi md:text-lg">
+      <div className="font-satoshi flex flex-col pt-6 md:text-lg">
         <motion.p
           variants={paragraphVariants}
           transition={{ duration: 0.5 }}
@@ -45,7 +45,7 @@ const BioSection = () => {
         <motion.p variants={paragraphVariants} transition={{ duration: 0.6 }} className="mb-4">
           At{" "}
           <ExternalLink href="https://www.hatchinvest.nz/" className="inline-flex w-fit">
-            <span className="font-bold text-hatch-purple hover:underline hover:decoration-hatch-purple hover:decoration-[3px] hover:underline-offset-2">
+            <span className="text-hatch-purple hover:decoration-hatch-purple font-bold hover:underline hover:decoration-[3px] hover:underline-offset-2">
               Hatch
             </span>
           </ExternalLink>

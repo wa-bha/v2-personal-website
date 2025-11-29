@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -398,7 +398,7 @@
 
 @layer base {
   h1 {
-    @apply font-nohemi font-black text-slate-blue;
+    @apply font-nohemi text-slate-blue font-black;
   }
 
   h2 {
@@ -406,7 +406,7 @@
   }
 
   button {
-    @apply rounded-md shadow-inner transition-all duration-300 hover:text-slate-blue hover:shadow-slate-blue;
+    @apply hover:text-slate-blue hover:shadow-slate-blue rounded-md shadow-inner transition-all duration-300;
   }
 
   /* Fancy slide in animation (left to right) for links  */

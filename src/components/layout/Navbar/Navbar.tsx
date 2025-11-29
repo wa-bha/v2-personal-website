@@ -48,13 +48,13 @@ const Navbar = () => {
   return (
     <nav
       id="nav-bar"
-      className="fixed bottom-auto left-0 right-0 top-0 z-10 h-14 bg-linear-to-b from-floral-white shadow-md"
+      className="from-floral-white fixed top-0 right-0 bottom-auto left-0 z-10 h-14 bg-linear-to-b shadow-md"
     >
       <div className="m-auto flex h-full max-w-[90%] items-center px-5">
         <div className="flex flex-row space-x-4 pr-10">
           {navItems.map(({ path, name }) => (
             <Link key={path} href={path} scroll={false}>
-              <span className="slide-in-underline flex align-middle font-medium after:bg-tomato">
+              <span className="slide-in-underline after:bg-tomato flex align-middle font-medium">
                 {name}
               </span>
             </Link>
