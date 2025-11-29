@@ -37,9 +37,9 @@ const BioSection = () => {
           transition={{ duration: 0.5 }}
           className="mb-4 font-semibold tracking-[-0.02em]"
         >
-          I&apos;m a highly motivated full-stack developer 👨‍💻 with a strong focus on crafting clean,
-          functional user experiences. I enjoy collaborating with talented teams to turn design
-          ideas into exceptional products.
+          Full-stack developer 👨‍💻 with strong domain expertise in the fin-tech sector and a knack
+          for crafting clean, functional user experiences. I enjoy working alongside talented teams
+          on turning design ideas into exceptional products.
         </motion.p>
 
         <motion.p variants={paragraphVariants} transition={{ duration: 0.6 }} className="mb-4">
@@ -49,15 +49,16 @@ const BioSection = () => {
               Hatch
             </span>
           </ExternalLink>
-          , I&apos;m helping build a platform that provides Kiwi investors 💸 with greater access to
-          global markets. I&apos;m proud to be part of a team that makes wealth generation simpler
-          and more accessible for everyone.
+          , I&apos;m proud to be part of a team building secure and scalable apps. We&apos;re on a
+          mission to make wealth generation simpler and more accessible for everyone - building a
+          platform that provides Kiwi investors 💸 with greater access to global markets.
         </motion.p>
 
         <motion.p variants={paragraphVariants} transition={{ duration: 0.9 }} className="mb-4">
           Outside of coding, I&apos;m usually exploring New Zealand{" "}
           <FlagNZ className="mb-1 inline-flex h-[1em]" /> (and the 🌏) — whether it&apos;s out on a
-          snowboard, hiking new trails or playing field hockey, I love spending time outdoors.
+          snowboard, hiking new trails or playing field hockey. I love just embracing new adventures
+          and my free time spending time outdoors.
         </motion.p>
       </div>
     </InView>
