@@ -5,5 +5,12 @@
   "labels": ["dependencies-chore"],
   "prHourlyLimit": 5,
   "schedule": ["before 4am on the first day of the month"],
-  "timezone": "Pacific/Auckland"
+  "timezone": "Pacific/Auckland",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "schedule": ["at any time"]
+    }
+  ]
 }
