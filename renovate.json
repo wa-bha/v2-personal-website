@@ -3,14 +3,33 @@
   "extends": ["config:recommended"],
   "assignees": ["wa-bha"],
   "labels": ["dependencies-chore"],
+  "timezone": "Pacific/Auckland",
+
+  // Limit the number of concurrent PRs and hourly PRs
   "prHourlyLimit": 5,
   "schedule": ["before 4am on the first day of the month"],
-  "timezone": "Pacific/Auckland",
+
   "packageRules": [
+    // Automerge minor and patch updates after 7 days of stability
     {
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": ["patch", "minor"],
       "automerge": true,
+      "automergeType": "pr",
+      "requiredStatusChecks": ["ci"],
+      "stabilityDays": 7,
       "schedule": ["at any time"]
+    },
+    // Major updates require manual review
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "labels": ["dependencies-major"]
+    },
+    // Group all non-breaking npm updates into a single PR
+    {
+      "matchManagers": ["npm"],
+      "groupName": "npm non-breaking updates",
+      "matchUpdateTypes": ["patch", "minor"]
     }
   ]
 }
