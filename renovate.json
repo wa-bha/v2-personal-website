@@ -9,6 +9,7 @@
   "prHourlyLimit": 5,
   "schedule": ["before 4am on the first day of the month"],
 
+  "ignoreDeps": ["lucide-react"],
   "packageRules": [
     // Automerge minor and patch updates after 7 days of stability
     {
