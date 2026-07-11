@@ -48,6 +48,7 @@ const Navbar = () => {
   return (
     <nav
       id="nav-bar"
+      aria-label="Main navigation"
       className="from-floral-white fixed top-0 right-0 bottom-auto left-0 z-10 h-14 bg-linear-to-b shadow-md"
     >
       <div className="m-auto flex h-full max-w-[90%] items-center px-5">
