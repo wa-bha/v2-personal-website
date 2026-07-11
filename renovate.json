@@ -20,6 +20,11 @@
       "stabilityDays": 7,
       "schedule": ["at any time"]
     },
+    // Block eslint major bumps until @typescript-eslint supports ESLint 10
+    {
+      "matchPackageNames": ["eslint"],
+      "allowedVersions": "<10"
+    },
     // Major updates require manual review
     {
       "matchUpdateTypes": ["major"],
