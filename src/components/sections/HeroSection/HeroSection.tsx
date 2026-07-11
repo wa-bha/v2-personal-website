@@ -1,19 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, CircleArrowRight, FileJson2 } from "lucide-react";
 import { ExternalLink, TextGenerateEffect } from "@/components/common";
 
 const HeroSection = () => {
-  const [hasAnimated, setHasAnimated] = useState(false);
-
-  useEffect(() => {
-    if (!hasAnimated) {
-      setHasAnimated(true);
-    }
-  }, [hasAnimated]);
-
   const variants = (startingHeight: number) => {
     return {
       hidden: { opacity: 0, y: startingHeight },
@@ -25,7 +16,7 @@ const HeroSection = () => {
     <div className="flex h-full flex-col items-center justify-center">
       <motion.div
         initial="hidden"
-        animate={hasAnimated ? "visible" : "hidden"}
+        animate="visible"
         variants={variants(40)}
         transition={{
           delay: 0.3,
@@ -47,7 +38,7 @@ const HeroSection = () => {
 
       <motion.div
         initial="hidden"
-        animate={hasAnimated ? "visible" : "hidden"}
+        animate="visible"
         variants={variants(20)}
         transition={{
           delay: 2.5,
